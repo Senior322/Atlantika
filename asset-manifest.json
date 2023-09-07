@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/atlantika/static/css/main.073c9b0a.css",
+    "main.js": "/atlantika/static/js/main.aa91d733.js",
+    "static/js/787.5a6882cf.chunk.js": "/atlantika/static/js/787.5a6882cf.chunk.js",
+    "static/media/logo.svg": "/atlantika/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/atlantika/index.html",
+    "main.073c9b0a.css.map": "/atlantika/static/css/main.073c9b0a.css.map",
+    "main.aa91d733.js.map": "/atlantika/static/js/main.aa91d733.js.map",
+    "787.5a6882cf.chunk.js.map": "/atlantika/static/js/787.5a6882cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.aa91d733.js"
+  ]
+}
