@@ -1,8 +1,8 @@
 {
-  "name": "initial-template-react",
+  "name": "atlantika",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://artipavl.github.io/initial-template-react/",
+  "homepage": "https://Senior322.github/atlantika/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
