@@ -1,0 +1,47 @@
+.basket {
+   color: #AD2808;
+   &:hover,
+   &:focus{
+      color: #01A0C6;
+      >.basketSum{
+         color: #01A0C6;
+      }
+   }
+}
+.basketBox {
+   display: flex;
+   // align-items: end;
+   justify-content: end;
+   width: 100%;
+}
+.basketValue {
+   // color: #ad2808;
+   // text-align: right;
+   font-family: Inter;
+   font-size: 20px;
+   // змінити після підрублення фонтів( зверху)
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   margin-right: 5px;
+}
+.basketIcon {
+   // margin-bottom: 5px;
+   // color: currentColor;
+   fill: currentColor;
+}
+.basketSum {
+   display: none;
+   @media screen and (min-width: 1440px) {
+      display: block;
+      color: #878787;
+      text-align: right;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-decoration-line: underline;
+
+   }
+}

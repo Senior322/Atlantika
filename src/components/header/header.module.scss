@@ -1,0 +1,16 @@
+.Header {
+   display: flex;
+   justify-content: center;
+}
+.HeaderContainer{
+   width: 320px;
+   padding: 9px 12px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.menu{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
