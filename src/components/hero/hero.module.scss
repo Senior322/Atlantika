@@ -1,0 +1,52 @@
+.heroSection {
+   background-image: url("../../assets/MAn.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 540px;
+   flex-shrink: 0;
+   @media screen and (min-width: 1440px) {
+      background-image: url("../../assets/pexelsanushgorak1229356\ 1.png");
+      width: 1440px;
+      height: 682px;
+      flex-shrink: 0;
+   }
+}
+.heroContainer {
+   padding-top: 60px;
+   padding-left: 20px;
+   @media screen and (min-width: 1440px) {
+      width: 100%;
+      height: 100%;
+      padding: 84px 120px 118.6px 127px;
+   }
+}
+.heroContainerText {
+   color: var(--white-color);
+   color: #fff;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px; /* 150% */
+   @media screen and (min-width: 1440px) {
+      font-size: 18px;
+      line-height: 26px;
+   }
+}
+.heroContainerText:nth-child(1) {
+   margin-top: 60px;
+   @media screen and (min-width: 1440px) {
+      margin: 0;
+   }
+}
+.heroContainerText:nth-child(2) {
+   margin-top: 20px;
+}
+.textAndBtn{
+   @media screen and (min-width: 1440px) {
+      margin-top: 309px;
+      display: flex;
+      flex-direction: row;
+   }
+}

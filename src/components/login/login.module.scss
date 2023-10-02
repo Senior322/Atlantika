@@ -1,0 +1,12 @@
+.loginContainer{
+   display: none;
+   @media screen and (min-width: 1440px) {
+      display: block;
+   }
+}
+.loginDoor {
+   width: 19px;
+   height: 19.507px;
+   flex-shrink: 0;
+   color: red;
+}
