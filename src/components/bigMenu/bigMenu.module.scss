@@ -1,0 +1,17 @@
+.downContainer {
+   display: none;
+   @media screen and (min-width: 1440px) {
+      display: block;
+      background-color: var(--dark-blue);
+   }
+}
+.downContainerUl {
+   display: flex;
+   flex-direction: row;
+   padding-inline: 260px;
+   justify-content: space-between;
+}
+.downContainerLi {  
+   padding-block: 12px;
+   color: var(--white-color);
+}

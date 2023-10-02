@@ -5,12 +5,26 @@
 .HeaderContainer{
    width: 320px;
    padding: 9px 12px;
+   @media screen and (min-width: 1440px) {
+      width: 100%;
+      padding: 0;
+   }
+}
+.headerFirs{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   @media screen and (min-width: 1440px) {
+      // width: 100%;
+      flex-direction: row-reverse;
+      padding: 15px 120px;
+   }
 }
 .menu{
    display: flex;
    align-items: center;
    justify-content: center;
+   @media screen and (min-width: 1440px) {
+      display: none;
+   }
 }

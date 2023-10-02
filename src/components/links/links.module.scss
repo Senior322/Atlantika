@@ -1,0 +1,28 @@
+.linksContainer {
+   display: none;
+   @media screen and (min-width: 1440px) {
+      display: flex;
+      flex-direction: column;
+   }
+}
+.linksIcons {
+   display: flex;
+   flex-direction: row;
+   gap: 4px;
+   margin-bottom: 8px;
+}
+.viberIcon {
+}
+.whatsAppIcon {
+}
+.telegramIcon {
+}
+.numbersContainer {
+   width: 192px;
+}
+.telNumber {
+}
+.linksVector {
+   margin-left: 12px;
+   background-color: #fff;
+}

@@ -1,0 +1,17 @@
+.collaboratorsContainer{
+
+}
+.collaboratorsContainerUl{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.collaboratorsContainerUlLi{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.imageTest{
+   width: 130px;
+height: 98px;
+}
