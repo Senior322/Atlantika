@@ -1,13 +1,13 @@
 import React from 'react';
 import css from './hero.module.scss';
-import BigLogo from 'components/BigLogo/bigLogo';
+import BigLogoo from 'components/BigLogo/bigLogo';
 import RegistrationBtn from 'components/registrationBtn/RegistrationBtn';
 
 export default function Hero() {
   return (
     <section className={css.heroSection}>
       <div className={css.heroContainer}>
-      <BigLogo />
+      <BigLogoo />
       <div className={css.textAndBtn}>
       <p className={css.heroContainerText}>
         Це платформа для оптових замовлень спортивного харчування та аксесуарів.

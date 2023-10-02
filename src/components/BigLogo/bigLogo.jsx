@@ -4,7 +4,7 @@ import BigLogoSvg from 'assets/bigLogo.svg'
 import BigLogoPng2 from 'assets/HeroBigLogo.png'
 import { Picture } from 'react-responsive-picture';
 
-export default function BigLogo() {
+export default function BigLogoo() {
   return (
     <a className={css.bigLogo}  href="/">
       <Picture
