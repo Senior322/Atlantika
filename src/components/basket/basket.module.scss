@@ -1,23 +1,20 @@
 .basket {
-   color: #AD2808;
+   color: #ad2808;
    &:hover,
-   &:focus{
-      color: #01A0C6;
-      >.basketSum{
-         color: #01A0C6;
+   &:focus {
+      color: #01a0c6;
+      > .basketSum {
+         color: #01a0c6;
       }
    }
 }
 .basketBox {
    display: flex;
-   // align-items: end;
-   justify-content: end;
+   justify-content: flex-end;
    width: 100%;
 }
 .basketValue {
-   // color: #ad2808;
-   // text-align: right;
-   font-family: Inter;
+   // font-family: Inter;
    font-size: 20px;
    // змінити після підрублення фонтів( зверху)
    font-style: normal;
@@ -26,8 +23,6 @@
    margin-right: 5px;
 }
 .basketIcon {
-   // margin-bottom: 5px;
-   // color: currentColor;
    fill: currentColor;
 }
 .basketSum {
@@ -36,12 +31,11 @@
       display: block;
       color: #878787;
       text-align: right;
-      font-family: Inter;
+      // font-family: Inter;
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
       text-decoration-line: underline;
-
    }
 }
