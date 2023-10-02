@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './bigLogo.module.scss'
 import BigLogoSvg from 'assets/bigLogo.svg'
-import BigLogoPng from 'assets/HeroBigLogo.png'
+import BigLogoPng2 from 'assets/HeroBigLogo.png'
 import { Picture } from 'react-responsive-picture';
 
 export default function BigLogo() {
@@ -14,7 +14,7 @@ export default function BigLogo() {
             media: '(max-width: 1439px)',
           },
           {
-            srcSet: BigLogoPng,
+            srcSet: BigLogoPng2,
           },
           {
             srcSet: BigLogoSvg,
