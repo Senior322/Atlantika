@@ -1,14 +1,24 @@
 .collaboratorsContainer {
+   padding-top: 20px;
+   @media screen and (min-width: 1440px) {
+      padding-top: 56px;
+   }
 }
 .collaboratorsContainerUl {
    display: flex;
+   justify-content: center;
    flex-wrap: wrap;
    gap: 20px;
+   @media screen and (min-width: 1440px) {
+      gap: 52px;
+      margin: auto;
+      max-width: 1040px;
+   }
 }
 .collaboratorsContainerUlLi {
-   // display: flex;
-   // align-items: center;
-   // justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    @media screen and (min-width: 1440px) {
       width: 130px;
       height: 98px;

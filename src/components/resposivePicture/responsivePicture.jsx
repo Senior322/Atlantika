@@ -1,25 +1,19 @@
-import React from 'react'
-// import { Picture } from 'react-responsive-picture'
+import React, { useEffect, useState } from 'react';
 
-export default function ResponsivePicture({little, big}) {
-   return (
-      <div>hi</div>
-      // <Picture
-      //   sources={[
-      //     {
-      //       srcSet: little,
-      //       media: '(max-width: 1439px)',
-      //     },
-      //     {
-      //       srcSet: big,
-      //     },
-      //     {
-      //       srcSet: little,
-      //       type: 'png',
-      //     },
-      //   ]}
-      // />
-   )
+export default function ResponsivePicture({ little, big, alt = 'image' }) {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return <img src={windowWidth < 1439 ? little : big} alt={alt} />;
 }
-
-

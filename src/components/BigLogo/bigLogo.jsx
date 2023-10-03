@@ -1,18 +1,14 @@
 import React from 'react'
 import css from './bigLogo.module.scss'
 import BigLogoSvg from 'assets/bigLogo.svg'
-// import BigLogoPng2 from 'assets/HeroBigLogo.png'
-import BigLogoPng2 from 'assets/viber.svg'
+import BigLogoPng2 from 'assets/HeroBigLogo.png'
+import ResponsivePicture from 'components/resposivePicture/responsivePicture'
 
 
 export default function BigLogo() {
   return (
     <a className={css.bigLogo}  href="/">
-       <img
-            srcSet={`${BigLogoPng2} , ${BigLogoSvg} 1440w`}
-            sizes="(max-width: 1439px) 1439px, 1440px"
-            alt="myImage"
-          />
+       <ResponsivePicture little={BigLogoSvg} big={BigLogoPng2} alt='logo'/>
     </a>
   )
 }
