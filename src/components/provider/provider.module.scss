@@ -1,0 +1,46 @@
+.providerSection {
+   padding-top: 20px;
+   background-image: url(../../assets/providerLittle.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   @media screen and (min-width: 1440px) {
+      background-image: url(../../assets/providerBig.png);
+      padding-top: 56px;
+   }
+}
+.providerContainer {
+   height: 390px;
+   padding-top: 79px;
+   margin-inline: 20px;
+   @media screen and (min-width: 1440px) {
+      height: 454px;
+      margin-left: 222px;
+      padding-top: 105px;
+      max-width: 522px;
+   }
+}
+.providerTitle {
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 30px;
+   color: var(--white-color);
+   @media screen and (min-width: 1440px) {
+      font-size: 50px;
+      line-height: 55px;
+   }
+}
+.providerText {
+   font-size: 16px;
+   color: var(--white-color);
+   margin-top: 20px;
+   font-weight: 700;
+   line-height: 24px;
+   @media screen and (min-width: 1440px) {
+      font-size: 20px;
+      font-style: normal;
+      line-height: 26px;
+      margin-top: 24px;
+   }
+}
