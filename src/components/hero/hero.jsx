@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './hero.module.scss';
 import BigLogo from 'components/BigLogo/bigLogo';
-import RegistrationBtn from 'components/registrationBtn/RegistrationBtn';
+import DefaultButton from 'components/defaultButton/defaultButton';
 
 export default function Hero() {
   return (
@@ -18,7 +18,7 @@ export default function Hero() {
         Ваш надійний партнер та постачальник спортивного харчування для Вашого
         бізнесу!
       </p>
-      <RegistrationBtn />
+      <DefaultButton info ='Реєстрація' arrow={true}/>
       </div>
       </div>
     </section>
