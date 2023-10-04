@@ -1,5 +1,6 @@
 import React from 'react';
 import css from 'components/provider/provider.module.scss';
+import DefaultButton from 'components/defaultButton/defaultButton';
 
 export default function Provider() {
   return (
@@ -10,7 +11,7 @@ export default function Provider() {
           Ваш надійний партнер та постачальник спортивного харчування для Вашого
           бізнесу!
         </p>
-        {/* button here  */}
+        <DefaultButton info={'стати своїм'} width={'209.4px'} height={'58px'} type={'button'}/>
       </div>
     </section>
   );

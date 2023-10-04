@@ -1,4 +1,4 @@
-.registrationBtn {
+.defaultButton {
    display: flex;
    padding: 10px 24px;
    justify-content: center;
@@ -16,7 +16,7 @@
       height: 58px;
    }
 }
-.registrationBtnLink {
+.defaultButtonLink {
    color: var(--white-color);
    font-size: 16px;
    font-style: normal;
