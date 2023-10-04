@@ -7,13 +7,10 @@
    background-color: var(--blue);
    border-radius: 8px;
    border: 1px solid var(--blue);
-   width: 180px;
-   height: 44px;
    @media screen and (min-width: 1440px) {
-      padding: 17px 32px;
-      gap: 40px;
-      width: 208.4px;
-      height: 58px;
+      padding: 17px 32px 17px 32px;
+      gap: 25px;
+      height: min-content;
    }
 }
 .defaultButtonLink {
