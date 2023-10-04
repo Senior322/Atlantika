@@ -11,7 +11,7 @@ export default function Provider() {
           Ваш надійний партнер та постачальник спортивного харчування для Вашого
           бізнесу!
         </p>
-        <DefaultButton info={'стати своїм'} width={'209.4px'} height={'58px'} type={'button'}/>
+        <DefaultButton info={'стати своїм'} type='button' arrow={true} className={css.providerButton}/>
       </div>
     </section>
   );
