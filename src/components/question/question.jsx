@@ -1,6 +1,6 @@
 import React from 'react';
 import css from 'components/question/question.module.scss';
-// import { Formik } from 'formik';
+import QuestionForm from 'components/questionForm/QuestionForm';
 
 export default function Question() {
   return (
@@ -10,6 +10,7 @@ export default function Question() {
         <p className={css.questionText}>
           Якщо у вас виникли питання, ми обов'язково на все відповімо
         </p>
+        <QuestionForm />
       </div>
     </section>
   );
