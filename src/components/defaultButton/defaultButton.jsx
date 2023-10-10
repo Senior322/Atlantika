@@ -5,9 +5,9 @@ import { ReactComponent as ButtonArrow } from 'assets/buttonArrow.svg';
 export default function DefaultButton({ info, arrow, type }) {
   return (
     <button type={type} className={css.defaultButton}>
-      <a className={css.defaultButtonLink} href="/">
+      <div className={css.defaultButtonLink}>
         {info}
-      </a>
+      </div>
       {arrow && (
         <span>
           <ButtonArrow />
