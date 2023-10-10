@@ -1,0 +1,23 @@
+.formContainer{
+   margin-top: 20px;
+}
+.border{
+   border-radius: 2px;
+   background: var(--dark-blue);
+   height: 2px;
+   margin-top: 20px;
+}
+.formInput{
+   padding: 10px 20px;
+   border: 1px solid var(--half-gray);
+   margin-top: 8px;
+}
+.formSpan{
+   color: var(--some-red);
+}
+.formText{
+   margin-top: 12px;
+}
+.confirm{
+   padding-top: 17px;
+}
