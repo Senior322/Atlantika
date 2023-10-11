@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/atlantika/static/css/main.0ec88e9e.css",
-    "main.js": "/atlantika/static/js/main.de65a5c7.js",
+    "main.css": "/atlantika/static/css/main.7c8d8dfb.css",
+    "main.js": "/atlantika/static/js/main.c7d1413b.js",
     "static/media/MAn.jpg": "/atlantika/static/media/MAn.4b491f66079cc4d8b517.jpg",
     "static/media/providerBig.png": "/atlantika/static/media/providerBig.ae60851e68f37b1148e0.png",
     "static/media/pexelsanushgorak1229356 1.png": "/atlantika/static/media/pexelsanushgorak1229356 1.522450a286356b81d7d0.png",
@@ -21,15 +21,16 @@
     "static/media/basket.svg": "/atlantika/static/media/basket.a6784b4990110547e26b35b4fdf5974c.svg",
     "static/media/whatsapp.svg": "/atlantika/static/media/whatsapp.f85ab3a69a41a5d36c677390e95b5b8d.svg",
     "static/media/telegram.svg": "/atlantika/static/media/telegram.d341a9ecdb0dc43e218b8033786dca04.svg",
+    "static/media/telephone.svg": "/atlantika/static/media/telephone.82f1896f82c55a6e4463143f72f6953d.svg",
     "index.html": "/atlantika/index.html",
     "static/media/buttonArrow.svg": "/atlantika/static/media/buttonArrow.69183e148c63fa9c6d9c7496b02745aa.svg",
     "static/media/burger.svg": "/atlantika/static/media/burger.3f40ebc32cf955c8d7e421b653a46f8e.svg",
     "static/media/Vector 3.svg": "/atlantika/static/media/Vector 3.328bb23d38c5a2c0948739dd139fcb7e.svg",
-    "main.0ec88e9e.css.map": "/atlantika/static/css/main.0ec88e9e.css.map",
-    "main.de65a5c7.js.map": "/atlantika/static/js/main.de65a5c7.js.map"
+    "main.7c8d8dfb.css.map": "/atlantika/static/css/main.7c8d8dfb.css.map",
+    "main.c7d1413b.js.map": "/atlantika/static/js/main.c7d1413b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ec88e9e.css",
-    "static/js/main.de65a5c7.js"
+    "static/css/main.7c8d8dfb.css",
+    "static/js/main.c7d1413b.js"
   ]
 }
