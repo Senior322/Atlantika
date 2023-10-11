@@ -8,21 +8,14 @@ const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 export default function QuestionForm() {
   const BasicFormSchema = Yup.object().shape({
-    email: Yup.string()
-      //Проверяем, корректный ли адрес.
-      //Если нет, то выводится сообщение в скобках
-      .email('Невалідна адреса')
-      //не сабмитим, если поле не заполнено
-      .required('Required'),
+    email: Yup.string().email('Недійсна адреса').required('Обов*язково'),
     userName: Yup.string()
-      //минимальная длина - 2 символа
-      .min(2, 'Must be longer than 2 characters')
-      //максимальная длина - 20 символов
-      .max(20, 'Nice try, nobody has a first name that long')
-      .required('Required'),
+      .min(2, 'Повинен бути довшим за 2 символи')
+      .max(20, 'Гарна спроба, ніхто не має такого довгого імені')
+      .required('Обов*язково'),
     telephoneNumber: Yup.string()
-      .matches(phoneRegExp, 'Phone number is not valid')
-      .required('Required'),
+      .matches(phoneRegExp, 'Номер телефону недійсний')
+      .required('Обов*язково'),
   });
   return (
     <div className={css.formContainer}>
@@ -40,38 +33,43 @@ export default function QuestionForm() {
         }}
       >
         <Form className={css.formFrom}>
-          <label htmlFor="userName">
-            Ваше ім’я <span className={css.formSpan}>*</span>
-            <Field
-              className={css.formInput}
-              type="text"
-              name="userName"
-              placeholder="Ігор"
-            ></Field>
-            <ErrorMessage name="userName" />
-          </label>
-          <label htmlFor="telephoneNumber">
-            Ваш номер телефону <span className={css.formSpan}>*</span>
-            <Field
-              className={css.formInput}
-              type="phone"
-              name="telephoneNumber"
-              placeholder="+380 (50) 777 74 56"
-            ></Field>
-            <ErrorMessage name="telephoneNumber" />
-          </label>
-          <label htmlFor="email">
-            Ваш E-mail <span className={css.formSpan}>*</span>
-            <Field
-              className={css.formInput}
-              type="email"
-              name="email"
-              placeholder="Igor@gmail.com.ua"
-            ></Field>
-            <ErrorMessage name="email" />
-          </label>
+          <div className={css.formFirstItems}>
+            <label htmlFor="userName">
+              <span className={css.formSpanInfo}>Ваше ім’я</span>{' '}
+              <span className={css.formSpan}>*</span>
+              <Field
+                className={css.formInput}
+                type="text"
+                name="userName"
+                placeholder="Ігор"
+              ></Field>
+              <ErrorMessage name="userName" />
+            </label>
+            <label htmlFor="telephoneNumber">
+              <span className={css.formSpanInfo}>Ваш номер телефону</span>{' '}
+              <span className={css.formSpan}>*</span>
+              <Field
+                className={css.formInput}
+                type="phone"
+                name="telephoneNumber"
+                placeholder="+380 (50) 777 74 56"
+              ></Field>
+              <ErrorMessage name="telephoneNumber" />
+            </label>
+            <label htmlFor="email">
+              <span className={css.formSpanInfo}>Ваш E-mail</span>{' '}
+              <span className={css.formSpan}>*</span>
+              <Field
+                className={css.formInput}
+                type="email"
+                name="email"
+                placeholder="Igor@gmail.com.ua"
+              ></Field>
+              <ErrorMessage name="email" />
+            </label>
+          </div>
+          <div className={css.border}></div>
           <div>
-            <div className={css.border}></div>
             <p className={css.formText}>
               Надсилаючи цю форму, я даю згоду на обробку моїх даних згідно з
               угодою про конфіденційність та відповідно до Положення та закону

@@ -1,31 +1,55 @@
-.formContainer{
+.formContainer {
    margin-top: 20px;
 }
-.border{
+.border {
    border-radius: 2px;
    background: var(--dark-blue);
    height: 2px;
    margin-top: 4px;
+   @media screen and (min-width: 1440px) {
+      margin-top: 40px;
+   }
 }
-.formFrom{
+.formFirstItems {
    display: flex;
    flex-direction: column;
    gap: 16px;
+   @media screen and (min-width: 1440px) {
+      flex-direction: row;
+      gap: 0px;
+      justify-content: space-between;
+   }
 }
-.formUlLi{
-}
-.formInput{
+.formInput {
    padding: 10px 20px;
    border: 1px solid var(--half-gray);
    margin-top: 8px;
    width: 100%;
+   @media screen and (min-width: 1440px) {
+      margin-top: 16px;
+   }
 }
-.formSpan{
+.formSpanInfo {
+   font-size: 13px;
+   @media screen and (min-width: 1440px) {
+      font-size: 15px;
+   }
+}
+.formSpan {
    color: var(--some-red);
 }
-.formText{
+.formText {
    margin-top: 12px;
+   font-size: 13px;
+   @media screen and (min-width: 1440px) {
+      margin-top: 20px;
+      max-width: 692px;
+      font-size: 15px;
+   }
 }
-.confirm{
-   padding-top: 17px;
+.confirm {
+   margin-top: 17px;
+   @media screen and (min-width: 1440px) {
+      margin-top: 20px;
+   }
 }
