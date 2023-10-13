@@ -1,5 +1,6 @@
 .footer {
    margin-top: 40px;
+   background-color: var(--black);
 }
 .footerContainer {
 }
@@ -12,6 +13,26 @@
 .footerSocial{
    
 }
+.footerUl{
+   color: var(--white-color);
+}
+.footerInfoContainer{
+   display:flex;
+   flex-direction: row;
+
+}
+.footerInfoP{
+   color: var(--white-color);
+}
+.footerInfoSpan{
+
+}
+.footerUlSecond{
+   color: var(--white-color);
+}
 .footerLinks{
 
+}
+.footerLinksFirst{
+   color: var(--white-color);
 }
