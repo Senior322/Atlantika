@@ -1,6 +1,6 @@
 .heroSection {
    background-image: url("../../assets/MAn.jpg");
-   background-repeat: no-repeat;
+   // background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
    width: 100%;
@@ -8,7 +8,8 @@
    flex-shrink: 0;
    @media screen and (min-width: 1440px) {
       background-image: url("../../assets/pexelsanushgorak1229356\ 1.png");
-      width: 1440px;
+      // width: 1440px;
+      width: 100%;
       height: 682px;
       flex-shrink: 0;
    }
@@ -48,5 +49,11 @@
       margin-top: 309px;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+   }
+}
+.heroContainerFirst{
+   @media screen and (min-width: 1440px) {
+      max-width: 793px;
    }
 }
