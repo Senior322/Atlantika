@@ -75,8 +75,18 @@ export default function QuestionForm() {
               угодою про конфіденційність та відповідно до Положення та закону
               про захист даних.
             </p>
-            <p className={css.confirm}>я даю згоду</p>
-            <DefaultButton info={'надіслати'} type={'submit'} />
+            <div className={css.confirmContainer}>
+              <label className={css.confirmContainerLabel}>
+                <input type="checkbox" />
+                <div className={css.checkMark}></div>
+              </label>
+              <p className={css.confirm}>я даю згоду</p>
+            </div>
+            <DefaultButton
+              info={'надіслати'}
+              type={'submit'}
+              className={css.questionFormBtn}
+            />
           </div>
         </Form>
       </Formik>
