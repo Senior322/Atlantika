@@ -79,8 +79,8 @@ export default function QuestionForm() {
               <label className={css.confirmContainerLabel}>
                 <input type="checkbox" />
                 <div className={css.checkMark}></div>
-              </label>
               <p className={css.confirm}>я даю згоду</p>
+              </label>
             </div>
             <DefaultButton
               info={'надіслати'}
