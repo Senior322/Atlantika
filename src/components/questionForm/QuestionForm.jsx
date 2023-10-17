@@ -16,6 +16,7 @@ export default function QuestionForm() {
     telephoneNumber: Yup.string()
       .matches(phoneRegExp, 'Номер телефону недійсний')
       .required('Обов*язково'),
+      agreed: Yup.boolean().oneOf([true],'Надайте згоду'),
   });
   return (
     <div className={css.formContainer}>
@@ -24,6 +25,7 @@ export default function QuestionForm() {
           userName: '',
           telephoneNumber: '',
           email: '',
+          agreed: false,
         }}
         validationSchema={BasicFormSchema}
         onSubmit={async (values, action) => {
@@ -77,9 +79,10 @@ export default function QuestionForm() {
             </p>
             <div className={css.confirmContainer}>
               <label className={css.confirmContainerLabel}>
-                <input type="checkbox" />
+                <Field type="checkbox" name='agreed'/>
                 <div className={css.checkMark}></div>
               <p className={css.confirm}>я даю згоду</p>
+              <ErrorMessage name="agreed" />
               </label>
             </div>
             <DefaultButton
