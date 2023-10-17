@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/atlantika/static/css/main.c5142b7a.css",
-    "main.js": "/atlantika/static/js/main.6afae1ab.js",
+    "main.css": "/atlantika/static/css/main.c2d1cfbe.css",
+    "main.js": "/atlantika/static/js/main.648e468f.js",
     "static/media/MAn.jpg": "/atlantika/static/media/MAn.4b491f66079cc4d8b517.jpg",
     "static/media/providerBig.png": "/atlantika/static/media/providerBig.ae60851e68f37b1148e0.png",
     "static/media/pexelsanushgorak1229356 1.png": "/atlantika/static/media/pexelsanushgorak1229356 1.522450a286356b81d7d0.png",
@@ -22,17 +22,21 @@
     "static/media/basket.svg": "/atlantika/static/media/basket.a6784b4990110547e26b35b4fdf5974c.svg",
     "static/media/whatsapp.svg": "/atlantika/static/media/whatsapp.f85ab3a69a41a5d36c677390e95b5b8d.svg",
     "static/media/telegram.svg": "/atlantika/static/media/telegram.d341a9ecdb0dc43e218b8033786dca04.svg",
+    "static/media/footerInstagram.svg": "/atlantika/static/media/footerInstagram.229dd986ff4e2c07b5e3b8ccbd6c65ca.svg",
+    "static/media/timeFrame.svg": "/atlantika/static/media/timeFrame.89256798a805ccb9317929a1ee0ca0f8.svg",
+    "static/media/footerFb.svg": "/atlantika/static/media/footerFb.f09a40c3067aa8b5fe7b2e3d00fa53ba.svg",
+    "static/media/footerYoutube.svg": "/atlantika/static/media/footerYoutube.3274a24758b04d451f2d557fbb8eac83.svg",
     "static/media/telephone.svg": "/atlantika/static/media/telephone.82f1896f82c55a6e4463143f72f6953d.svg",
     "index.html": "/atlantika/index.html",
     "static/media/location.svg": "/atlantika/static/media/location.bd67bbd0b0e6743e8903cb1a38a2106a.svg",
     "static/media/buttonArrow.svg": "/atlantika/static/media/buttonArrow.69183e148c63fa9c6d9c7496b02745aa.svg",
     "static/media/burger.svg": "/atlantika/static/media/burger.3f40ebc32cf955c8d7e421b653a46f8e.svg",
     "static/media/Vector 3.svg": "/atlantika/static/media/Vector 3.328bb23d38c5a2c0948739dd139fcb7e.svg",
-    "main.c5142b7a.css.map": "/atlantika/static/css/main.c5142b7a.css.map",
-    "main.6afae1ab.js.map": "/atlantika/static/js/main.6afae1ab.js.map"
+    "main.c2d1cfbe.css.map": "/atlantika/static/css/main.c2d1cfbe.css.map",
+    "main.648e468f.js.map": "/atlantika/static/js/main.648e468f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5142b7a.css",
-    "static/js/main.6afae1ab.js"
+    "static/css/main.c2d1cfbe.css",
+    "static/js/main.648e468f.js"
   ]
 }
