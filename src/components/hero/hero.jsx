@@ -9,17 +9,24 @@ export default function Hero() {
       <div className={css.heroContainer}>
         <BigLogo />
         <div className={css.textAndBtn}>
-         <div className={css.heroContainerFirst}>
-          <p className={css.heroContainerText}>
-            Це платформа для оптових замовлень спортивного харчування та
-            аксесуарів. Дана платформа призначена: для магазинів спортивного
-            харчування, інтернет-магазинів, фітнес клубів, барів, тренерів.
-          </p>
-          <p className={css.heroContainerText}>
-            Ваш надійний партнер та постачальник спортивного харчування для
-            Вашого бізнесу!
-          </p></div>
-          <DefaultButton info="Реєстрація" arrow={true} type={'button'} />
+          <div className={css.heroContainerFirst}>
+            <p className={css.heroContainerText}>
+              Це платформа для оптових замовлень спортивного харчування та
+              аксесуарів. Дана платформа призначена: для магазинів спортивного
+              харчування, інтернет-магазинів, фітнес клубів, барів, тренерів.
+            </p>
+            <p className={css.heroContainerText}>
+              Ваш надійний партнер та постачальник спортивного харчування для
+              Вашого бізнесу!
+            </p>
+          </div>
+
+          <DefaultButton
+            info="Реєстрація"
+            arrow={true}
+            type={'button'}
+            className={css.heroBtn}
+          />
         </div>
       </div>
     </section>

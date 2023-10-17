@@ -1,6 +1,6 @@
 .heroSection {
    background-image: url("../../assets/MAn.jpg");
-   // background-repeat: no-repeat;
+   background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
    width: 100%;
@@ -56,4 +56,7 @@
    @media screen and (min-width: 1440px) {
       max-width: 793px;
    }
+}
+.heroBtn{
+   margin-bottom: auto;
 }
