@@ -56,7 +56,8 @@
    }
 }
 .confirmContainerLabel{
-   margin-right: 12px;
+  display: flex;
+  gap: 12px;
 }
 .confirmContainerLabel input {
    width: 0;
@@ -69,7 +70,6 @@
    width: 20px;
    border: 1px solid var(--half-gray);
    position: relative;
-   
 }
 .confirmContainerLabel input:checked ~ .checkMark::before {
    content: "";
@@ -84,4 +84,7 @@
 }
 .questionFormBtn {
    margin-top: 20px;
+}
+.confirm{
+   
 }
