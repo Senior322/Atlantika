@@ -1,5 +1,6 @@
 import React from 'react';
 import css from 'components/bigMenu/bigMenu.module.scss';
+import { Link } from 'react-router-dom';
 
 export default function BigMenu() {
   return (
@@ -11,7 +12,7 @@ export default function BigMenu() {
       <li className={css.downContainerLi}><a href="/">Доставка і оплата</a></li>
       <li className={css.downContainerLi}><a href="/">Акції</a></li>
       <li className={css.downContainerLi}><a href="/">Контакти</a></li>
-      <li className={css.downContainerLi}><a href="/">Про нас</a></li>
+      <li className={css.downContainerLi}><Link to="/about">Про нас</Link></li>
    </ul>
    </div>
   )
