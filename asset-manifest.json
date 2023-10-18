@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/atlantika/static/css/main.632d7813.css",
-    "main.js": "/atlantika/static/js/main.0bb124b3.js",
+    "main.css": "/atlantika/static/css/main.52f8d2ae.css",
+    "main.js": "/atlantika/static/js/main.28e2bd26.js",
     "static/media/MAn.jpg": "/atlantika/static/media/MAn.4b491f66079cc4d8b517.jpg",
     "static/media/providerBig.png": "/atlantika/static/media/providerBig.ae60851e68f37b1148e0.png",
     "static/media/pexelsanushgorak1229356 1.png": "/atlantika/static/media/pexelsanushgorak1229356 1.522450a286356b81d7d0.png",
@@ -32,11 +32,11 @@
     "static/media/buttonArrow.svg": "/atlantika/static/media/buttonArrow.69183e148c63fa9c6d9c7496b02745aa.svg",
     "static/media/burger.svg": "/atlantika/static/media/burger.3f40ebc32cf955c8d7e421b653a46f8e.svg",
     "static/media/Vector 3.svg": "/atlantika/static/media/Vector 3.328bb23d38c5a2c0948739dd139fcb7e.svg",
-    "main.632d7813.css.map": "/atlantika/static/css/main.632d7813.css.map",
-    "main.0bb124b3.js.map": "/atlantika/static/js/main.0bb124b3.js.map"
+    "main.52f8d2ae.css.map": "/atlantika/static/css/main.52f8d2ae.css.map",
+    "main.28e2bd26.js.map": "/atlantika/static/js/main.28e2bd26.js.map"
   },
   "entrypoints": [
-    "static/css/main.632d7813.css",
-    "static/js/main.0bb124b3.js"
+    "static/css/main.52f8d2ae.css",
+    "static/js/main.28e2bd26.js"
   ]
 }
