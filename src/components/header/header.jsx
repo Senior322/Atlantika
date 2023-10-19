@@ -11,16 +11,18 @@ export default function Header() {
   return (
     <header className={css.Header}>
       <div className={css.HeaderContainer}>
-         <div className={css.headerFirs}>
-        <Basket />
-        <Login />
-        <Logo />
-        <Links />
-        <button type="button" className={css.menu}>
-          <Burger></Burger>
-        </button>
+        <div className={css.headerFirs}>
+          <Basket />
+          <Login />
+          <div className={css.headerLogoStyle}>
+            <Logo />
+          </div>
+          <Links />
+          <button type="button" className={css.menu}>
+            <Burger></Burger>
+          </button>
         </div>
-        <BigMenu/>
+        <BigMenu />
       </div>
     </header>
   );

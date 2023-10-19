@@ -3,6 +3,9 @@
    padding-top: 40px;
    padding-bottom: 40px;
    background-color: var(--black);
+   @media screen and (min-width: 1440px) {
+     padding-top: 56px;
+   }
 }
 .footerContainer {
    margin-inline: 20px;
@@ -93,8 +96,6 @@
 .footerInfoP {
    color: var(--white-color);
 }
-.footerInfoSpan {
-}
 .footerUlSecond {
    color: var(--white-color);
    display: grid;
@@ -105,6 +106,10 @@
    font-style: normal;
    font-weight: 400;
    line-height: 18px; /* 138.462% */
+   @media screen and (min-width: 1440px) {
+      gap: 18px;
+      column-gap: 104px;
+   }
 }
 .footerUlSecondLi:nth-child(even) {
    opacity: 0.5;
@@ -123,7 +128,10 @@
 }
 .footerLinksFirst {
    color: var(--white-color);
+   opacity: 0.5;
+   font-size: 13px;
    @media screen and (min-width: 1440px) {
+      font-size: 12px;
    }
 }
 .footerLinksSecond {
