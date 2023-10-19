@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/atlantika/static/css/main.52f8d2ae.css",
-    "main.js": "/atlantika/static/js/main.28e2bd26.js",
+    "main.css": "/atlantika/static/css/main.11471192.css",
+    "main.js": "/atlantika/static/js/main.397ecc1b.js",
     "static/media/MAn.jpg": "/atlantika/static/media/MAn.4b491f66079cc4d8b517.jpg",
     "static/media/providerBig.png": "/atlantika/static/media/providerBig.ae60851e68f37b1148e0.png",
     "static/media/pexelsanushgorak1229356 1.png": "/atlantika/static/media/pexelsanushgorak1229356 1.522450a286356b81d7d0.png",
     "static/media/providerLittle.png": "/atlantika/static/media/providerLittle.7f50ff75caa68f4e7c05.png",
+    "static/media/secondHeroFirst.png": "/atlantika/static/media/secondHeroFirst.d9a22411e8153bc422b0.png",
     "static/media/beznazvanija-130x100.png": "/atlantika/static/media/beznazvanija-130x100.81b07f0d5f1c17ecea13.png",
     "static/media/usplabs-210x80-130x100.png": "/atlantika/static/media/usplabs-210x80-130x100.41bab7217ce63aecfd6b.png",
     "static/media/nutrex-210x80-130x100.png": "/atlantika/static/media/nutrex-210x80-130x100.df6fe38d3ccdbd4cef78.png",
@@ -32,11 +33,11 @@
     "static/media/buttonArrow.svg": "/atlantika/static/media/buttonArrow.69183e148c63fa9c6d9c7496b02745aa.svg",
     "static/media/burger.svg": "/atlantika/static/media/burger.3f40ebc32cf955c8d7e421b653a46f8e.svg",
     "static/media/Vector 3.svg": "/atlantika/static/media/Vector 3.328bb23d38c5a2c0948739dd139fcb7e.svg",
-    "main.52f8d2ae.css.map": "/atlantika/static/css/main.52f8d2ae.css.map",
-    "main.28e2bd26.js.map": "/atlantika/static/js/main.28e2bd26.js.map"
+    "main.11471192.css.map": "/atlantika/static/css/main.11471192.css.map",
+    "main.397ecc1b.js.map": "/atlantika/static/js/main.397ecc1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.52f8d2ae.css",
-    "static/js/main.28e2bd26.js"
+    "static/css/main.11471192.css",
+    "static/js/main.397ecc1b.js"
   ]
 }
