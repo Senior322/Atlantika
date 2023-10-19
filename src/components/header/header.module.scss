@@ -2,7 +2,7 @@
    display: flex;
    justify-content: center;
 }
-.HeaderContainer{
+.HeaderContainer {
    width: 320px;
    padding: 9px 12px;
    @media screen and (min-width: 1440px) {
@@ -10,17 +10,26 @@
       padding: 0;
    }
 }
-.headerFirs{
+.headerFirs {
    display: flex;
    justify-content: space-between;
    align-items: center;
    @media screen and (min-width: 1440px) {
-      // width: 100%;
       flex-direction: row-reverse;
       padding: 15px 120px;
+      // position: relative;
+      
    }
 }
-.menu{
+.headerLogoStyle {
+   @media screen and (min-width: 1440px) {
+      // position: absolute;
+      // transform: translateX(-50%);
+      // left: 50%;
+      // top: 15px;
+   }
+}
+.menu {
    display: flex;
    align-items: center;
    justify-content: center;

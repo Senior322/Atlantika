@@ -1,0 +1,13 @@
+.aboutHeroSection {
+}
+.aboutHeroContainer {
+   background-image: url(../../assets/secondHeroFirst.png);
+   height: 416px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   @media screen and (min-width: 1440px){
+      // background-image: url(../../assets/secondHeroSecond.png);
+      // height: 682px;
+   }
+}
