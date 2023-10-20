@@ -1,14 +1,17 @@
 .aboutHeroSection {
+   display: flex;
    @media screen and (min-width: 1440px) {
-      background-color: #EFEFEF;
+      background-color: #efefef;
    }
 }
 .aboutHeroContainer {
    display: flex;
    flex-direction: column;
+   width: 320px;
+   margin: auto;
    @media screen and (min-width: 1440px) {
-      flex-direction: row-reverse;
-      margin-left: 120px;
+      width: 1200px;
+      height: 682px;
    }
 }
 .aboutHeroImage {
@@ -22,16 +25,24 @@
    @media screen and (min-width: 1440px) {
       background-image: url(../../assets/secondHeroSecond.png);
       height: 682px;
-      min-width: 628px;
+      width: 628px;
+      position: absolute;
+      right: 0;
    }
 }
 .aboutInfoCintainer {
    margin-inline: 20px;
    display: flex;
    flex-direction: column;
-   gap: 20px; @media screen and (min-width: 1440px) {
-      background-color: #EFEFEF;
-    }
+   gap: 20px;
+   margin-top: 40px;
+   @media screen and (min-width: 1440px) {
+      background-color: #efefef;
+      padding-block: 80px;
+      margin: 0;
+      width: 579px;
+      gap: 30px;
+   }
 }
 .aboutTitle {
    font-family: Russo One;
@@ -39,27 +50,23 @@
    font-style: normal;
    font-weight: 400;
    line-height: 30px; /* 125% */
-   margin-top: 40px;
    color: var(--dark-blue);
 }
 .aboutP {
    color: var(--gray);
-   font-family: Play;
    font-size: 16px;
    font-style: normal;
-   font-weight: 700;
-   line-height: 24px; /* 150% */
+   font-weight: 400;
+   line-height: 24px;
    @media screen and (min-width: 1440px) {
-     margin-top: 30px;
-     
    }
 }
-.aboutInfoCintainer{
-   @media screen and (min-width: 1440px) {
-     margin-right: 113px;
-      
-    }
-}
-.aboutP:last-child{
+.aboutP:last-child {
+   font-size: 16px;
+   font-weight: 700;
    line-height: 20px;
+   @media screen and (min-width: 1440px) {
+      font-size: 20px;
+      line-height: 24px;
+   }
 }
