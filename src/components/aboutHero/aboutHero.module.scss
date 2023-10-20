@@ -1,13 +1,65 @@
 .aboutHeroSection {
+   @media screen and (min-width: 1440px) {
+      background-color: #EFEFEF;
+   }
 }
 .aboutHeroContainer {
+   display: flex;
+   flex-direction: column;
+   @media screen and (min-width: 1440px) {
+      flex-direction: row-reverse;
+      margin-left: 120px;
+   }
+}
+.aboutHeroImage {
    background-image: url(../../assets/secondHeroFirst.png);
    height: 416px;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   @media screen and (min-width: 1440px){
-      // background-image: url(../../assets/secondHeroSecond.png);
-      // height: 682px;
+   width: 100%;
+   height: 416px;
+   @media screen and (min-width: 1440px) {
+      background-image: url(../../assets/secondHeroSecond.png);
+      height: 682px;
+      min-width: 628px;
    }
+}
+.aboutInfoCintainer {
+   margin-inline: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px; @media screen and (min-width: 1440px) {
+      background-color: #EFEFEF;
+    }
+}
+.aboutTitle {
+   font-family: Russo One;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 30px; /* 125% */
+   margin-top: 40px;
+   color: var(--dark-blue);
+}
+.aboutP {
+   color: var(--gray);
+   font-family: Play;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 24px; /* 150% */
+   @media screen and (min-width: 1440px) {
+     margin-top: 30px;
+     
+   }
+}
+.aboutInfoCintainer{
+   @media screen and (min-width: 1440px) {
+     margin-right: 113px;
+      
+    }
+}
+.aboutP:last-child{
+   line-height: 20px;
 }
