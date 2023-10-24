@@ -1,12 +1,15 @@
-import React from 'react'
-import css from 'components/discoutsHero/discoutsHero.module.scss'
+import React from 'react';
+import css from 'components/discoutsHero/discoutsHero.module.scss';
 
 export default function DiscountsHero() {
   return (
     <section className={css.discountSection}>
-      <div>
-
+      <div className={css.discountsContainer}>
+        <div className={css.discountHero}>
+          <h1 className={css.discountHeroTitle}>Система знижок</h1>
+        </div>
+        <div className={css.discountInfo}></div>
       </div>
     </section>
-  )
+  );
 }
