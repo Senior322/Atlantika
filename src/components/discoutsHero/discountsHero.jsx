@@ -8,7 +8,6 @@ export default function DiscountsHero() {
         <div className={css.discountHero}>
           <h1 className={css.discountHeroTitle}>Система знижок</h1>
         </div>
-        <div className={css.discountInfo}></div>
       </div>
     </section>
   );
