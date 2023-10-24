@@ -1,0 +1,55 @@
+.discountInfoSection {
+   background-color: #efefef;
+   display: flex;
+   // width: 100%;
+}
+.discountInfoContainer {
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-inline: 20px;
+   @media screen and (min-width: 1440px){
+      margin-top: 60px;
+      margin-bottom: 60px;
+      margin-inline: 222px;
+   }
+}
+.discountInfoContainerP {
+   color: var(--gray);
+   font-family: Play;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px; /* 150% */
+}
+.discountInfoContainerPSpan {
+   font-weight: 700;
+}
+.discountInfoContainerUl {
+   color: var(--gray);
+   font-family: Play;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px; /* 150% */
+   margin-top: 12px;
+}
+.discountInfoContainerUlLi{
+   display: flex;
+   // flex-direction: column;
+   // text-align: center;
+   // align-items: center;
+   gap: 12px;
+}
+.discountInfoContainerUlLiSpan{
+   display: flex;
+   align-items: center;
+}
+.discountInfoContainerP:nth-child(2){
+   margin-top: 20px;
+}
+.discountInfoContainerP:nth-child(3){
+   margin-top: 20px;
+}
+.discountInfoContainerP:nth-child(5){
+   margin-top: 20px;;
+}
