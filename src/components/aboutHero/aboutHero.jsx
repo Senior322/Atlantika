@@ -5,7 +5,7 @@ import NavigationWay from 'components/navigationWay/navigationWay';
 export default function AboutHero() {
   return (
     <section className={css.aboutHeroSection}>
-      <NavigationWay/>
+      <NavigationWay className={css.testttt}/>
       <div className={css.aboutHeroContainer}>
         <div className={css.aboutHeroImage}></div>
         <div className={css.aboutInfoCintainer}>
