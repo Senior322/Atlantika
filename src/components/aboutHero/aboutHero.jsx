@@ -1,12 +1,11 @@
 import React from 'react';
 import css from 'components/aboutHero/aboutHero.module.scss';
-import { useLocation } from 'react-router-dom';
+import NavigationWay from 'components/navigationWay/navigationWay';
 
 export default function AboutHero() {
-  const Route = useLocation();
-  console.log(Route);
   return (
     <section className={css.aboutHeroSection}>
+      <NavigationWay/>
       <div className={css.aboutHeroContainer}>
         <div className={css.aboutHeroImage}></div>
         <div className={css.aboutInfoCintainer}>
