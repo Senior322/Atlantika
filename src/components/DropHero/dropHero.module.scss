@@ -1,0 +1,21 @@
+.dropHeroSection {
+   background-image: url(../../assets/DropHeroImage.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 267px;
+   // background: linear-gradient(180deg, #000 38.84%, rgba(0, 0, 0, 0.00) 106.61%);
+}
+.dropHeroContainer {
+   display: flex;
+   justify-content: center;
+}
+.dropHeroContainerTitle {
+   color: var(--white-color);
+   font-family: Russo One;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 30px; /* 125% */
+   margin-top: 121px;
+}
