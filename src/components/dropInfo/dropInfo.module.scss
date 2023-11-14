@@ -10,7 +10,6 @@
 }
 .dropInfoContainerP {
    color: #666;
-   font-family: Play;
    font-size: 16px;
    font-style: normal;
    font-weight: 400;
@@ -18,17 +17,10 @@
 }
 .dropInfoContainerPSpan {
    color: #666;
-   font-family: Play;
    font-size: 16px;
    font-style: normal;
    font-weight: 700;
    line-height: 24px; /* 150% */
-}
-.dropInfoContainerOl {
-   margin-top: 20px;
-   display: flex;
-   flex-direction: column;
-   gap: 12px;
 }
 .dropInfoContainerTitle {
    margin-top: 20px;
