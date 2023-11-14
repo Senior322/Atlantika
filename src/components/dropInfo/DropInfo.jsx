@@ -1,5 +1,6 @@
 import React from 'react';
 import css from 'components/dropInfo/dropInfo.module.scss';
+import CustomDropList from 'components/CustomDropList/CustomDropList';
 
 export default function DropInfo() {
   return (
@@ -12,19 +13,7 @@ export default function DropInfo() {
           до дропшипера, той передає замовлення постачальнику, постачальник
           відправляє товар безпосередньо замовнику.
         </p>
-        <ol className={css.dropInfoContainerOl}>
-          <li>Робите замовлення на сайті.</li>
-          <li>При оформленні замовлення вказуєте «Дропшипінг».</li>
-          <li>
-            Створюєте в додатку Нова Пошта ТТН і вказуєте її в рядку ТТН при
-            оформленні замовлення.
-          </li>
-          <li>
-            Після оформлення замовлення з вами зв’язується менеджер для
-            підтвердження.
-          </li>
-          <li>Тільки після підтвердження ви отримуєте рахунок на оплату.</li>
-        </ol>
+        <CustomDropList />
         <h2 className={css.dropInfoContainerTitle}>Умови співпраці</h2>
         <div className={css.dropUnderTitleBox}>
           <p>Знижка по системі дропшипінг 25%.</p>

@@ -1,0 +1,32 @@
+.customDropOl {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   list-style-type: none;
+   counter-reset: custom-counter;
+   padding: 0;
+}
+.customDropLi {
+   position: relative;
+   counter-increment: custom-counter;
+   display: flex;
+   align-items: center;
+   color: var(--gray);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px; /* 150% */
+}
+.customDropLi:before {
+   content: counter(custom-counter);
+   display: block;
+   border-radius: 50%;
+   background-color: var(--dark-blue);
+   color: var(--white-color);
+   text-align: center;
+   min-width: 22px;
+   height: 22px;
+   line-height: 20px;
+   margin-right: 12px;
+}
