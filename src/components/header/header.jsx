@@ -2,10 +2,10 @@ import React from 'react';
 import css from './header.module.scss';
 import Logo from 'components/Logo/logo';
 import Basket from 'components/basket/basket';
-import { ReactComponent as Burger } from 'assets/burger.svg';
 import Links from 'components/links/links';
 import Login from 'components/login/login';
 import BigMenu from 'components/bigMenu/bigMenu';
+import BurgerMenu from 'components/burgerMenu/BurgerMenu';
 
 export default function Header() {
   return (
@@ -19,8 +19,9 @@ export default function Header() {
           </div>
           <Links />
           <button type="button" className={css.menu}>
-            <Burger></Burger>
+            <BurgerMenu/>
           </button>
+          
         </div>
         <BigMenu />
       </div>
