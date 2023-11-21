@@ -4,9 +4,16 @@
    display: flex;
    justify-content: center;
    background-color: #efefef;
+   @media screen and (min-width: 1440px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+   }
 }
 .dropInfoContainer {
    margin-inline: 20px;
+   @media screen and (min-width: 1440px) {
+      margin-inline: 222px;
+   }
 }
 .dropInfoContainerP {
    color: #666;
@@ -30,10 +37,16 @@
    font-style: normal;
    font-weight: 700;
    line-height: 26px; /* 144.444% */
+   @media screen and (min-width: 1440px) {
+      margin-top: 32px;
+   }
 }
-.dropUnderTitleBox{
+.dropUnderTitleBox {
    display: flex;
    flex-direction: column;
    gap: 12px;
    margin-top: 20px;
+   @media screen and (min-width: 1440px) {
+      gap: 20px;
+   }
 }

@@ -1,12 +1,17 @@
 .dropHeroSection {
-   background: linear-gradient(180deg, #000 38.84%, rgba(0, 0, 0, 0.00) 106.61%), url(../../assets/DropHeroImage.png);
-   // background-image: url(../../assets/DropHeroImage.png);
+   // background: linear-gradient(180deg, #000 38.84%, rgba(0, 0, 0, 0.00) 106.61%), url(../../assets/DropHeroImage.png);
+   background-image: url(../../assets/DropHeroImage.png);
    background-repeat: no-repeat, no-repeat;
    background-position: top, bottom;
    // background-size: cover, auto;
    height: 341px;
    // background-blend-mode: saturation;
    // background: linear-gradient(180deg, #000 38.84%, rgba(0, 0, 0, 0.00) 106.61%);
+   @media screen and (min-width: 1440px){
+      background-image: url(../../assets/DropHeroImageBig.png);
+      // right: 100%;
+   
+   }
 }
 .dropHeroContainer {
    display: flex;
