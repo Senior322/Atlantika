@@ -12,8 +12,8 @@ export default function BurgerMenu() {
     <div className={css.BurgerMenu}>
       <button onClick={handleMenuToggle}><BurgerIcon/></button>
       {isOpen && (
-        <ul>
-      <li ><Link to="/catalog">Каталог товарів</Link></li>
+        <ul className={css.burgerList}>
+      <li><Link to="/catalog">Каталог товарів</Link></li>
       <li><Link to="/discounts">Система знижок</Link></li>
       <li><Link to="/drop">Дропшипінг</Link></li>
       <li><Link to="/delivery">Доставка і оплата</Link></li>
