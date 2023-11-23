@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as ViberIcon } from 'assets/viber.svg';
 import { ReactComponent as WhatsappIcon } from 'assets/whatsapp.svg';
 import { ReactComponent as TelegramIcon } from 'assets/telegram.svg';
+import { ReactComponent as BurgerClosed } from 'assets/BurgerClosed.svg';
 
 export default function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,7 @@ export default function BurgerMenu() {
       <button onClick={MenuToggle}><BurgerIcon/></button>
       {isOpen && (
          <div className={css.burgerArena}>
+            <button className={css.BurgerClosedIcon} onClick={MenuToggle}><BurgerClosed/></button>
         <ul className={css.burgerList}>
       <li className={css.burgerListLi}><Link to="/catalog">Каталог товарів</Link></li>
       <li className={css.burgerListLi}><Link to="/discounts">Система знижок</Link></li>
