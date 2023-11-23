@@ -18,9 +18,9 @@ export default function Header() {
             <Logo />
           </div>
           <Links />
-          <button type="button" className={css.menu}>
+          {/* <button type="button" className={css.menu}>
+          </button> */}
             <BurgerMenu/>
-          </button>
           
         </div>
         <BigMenu />
