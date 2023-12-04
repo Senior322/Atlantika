@@ -1,13 +1,17 @@
 .BurgerMenu {
 }
 .burgerArena {
-   width: 276px;
-   height: 568px;
-   // height: 100%;
+   width: 100%;
+   height: 100vh;
    right: 0;
    top: 0;
    position: absolute;
    z-index: 1;
+   display: flex;
+   justify-content: flex-end;
+}
+.burgerContent{
+   width: 276px;
    background-color: var(--white-color);
    display: flex;
    flex-direction: column;
