@@ -1,10 +1,16 @@
-import Question from 'components/question/question'
-import React from 'react'
+import DeliveryInfo from 'components/DeliveryInfo/DeliveryInfo';
+import DeliveryHero from 'components/deliveryHero/DeliveryHero';
+import NavigationWay from 'components/navigationWay/navigationWay';
+import Question from 'components/question/question';
+import React from 'react';
 
 export default function Delivery() {
   return (
-    <div>Delivery
-      <Question/>
-    </div>
-  )
+    <>
+      <NavigationWay />
+      <DeliveryHero/>
+      <DeliveryInfo/>
+      <Question />
+    </>
+  );
 }

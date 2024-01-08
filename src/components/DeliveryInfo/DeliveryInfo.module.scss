@@ -1,0 +1,37 @@
+.DeliveryInfoSection {
+   background-color: var(--background-gray);
+   display: flex;
+   flex-direction: column;
+}
+.DeliveryInfoContainer {
+   margin-inline: 20px;
+   padding-block: 40px;
+}
+.DeliveryFirstInfo {
+}
+.DeliverySecondInfo {
+   padding-top: 20px;
+}
+.DeliveryInfoTitle {
+   color: var(--dark-blue);
+   font-family: Play;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 26px; /* 144.444% */
+}
+.DeliveryInfoP {
+   color: var(--gray);
+   font-family: Play;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px; /* 150% */
+}
+.DeliveryInfoP:nth-child(2) {
+   padding-top: 20px;
+}
+.DeliveryInfoP:nth-child(3) {
+   padding-top: 12px;
+   // background-color: red;
+}
