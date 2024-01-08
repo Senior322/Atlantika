@@ -1,5 +1,6 @@
 import React from 'react';
 import css from 'components/DeliveryInfo/DeliveryInfo.module.scss';
+import { ReactComponent as PlaceItem1 } from 'assets/navigationItem1.svg';
 
 export default function DeliveryInfo() {
   return (
@@ -21,7 +22,7 @@ export default function DeliveryInfo() {
           <h2 className={css.DeliveryInfoTitle}>Доставка</h2>
           <p className={css.DeliveryInfoP}>Доставка здійснюється Новою поштою за тарифами перевізника.</p>
           <p className={css.DeliveryInfoP}>Також можливий самовивіз у Києві за адресою:</p>
-          <span>
+          <span className={css.DeliverySpan}> <PlaceItem1/>
             <p>Андрющенко 2/26</p>
           </span>
           <p className={css.DeliveryInfoP}>
