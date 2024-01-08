@@ -1,0 +1,28 @@
+.ContactsHeroSection {
+}
+.ContactsHeroContainer {
+   background-image: url(../../assets/discountsHero.png);
+   // background-image: url(../../assets/bigDiscountsHero.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 256px;
+   @media screen and (min-width: 1440px){
+      background-image: url(../../assets/BigContactHeroImage.png);
+      max-width: 741px;
+      height: 337px;
+      
+   }
+}
+.ContactsHeroTitle {
+   color: var(--white-color);
+   font-family: Russo One;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 30px; /* 125% */
+   height: 256px;
+   @media screen and (min-width: 1440px){
+      font-size: 50px;
+      line-height: 55px; /* 110% */
+   }
+}
