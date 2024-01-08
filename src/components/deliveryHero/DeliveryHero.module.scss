@@ -1,0 +1,20 @@
+.deliveryHeroSection {
+//  display: flex;
+}
+.deliveryHeroContainer{
+   background-image: url(../../assets/Drugs.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 303px;
+   display: flex;
+}
+.deliveryHeroTitle {
+   color: var(--white-color);
+   font-family: Russo One;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 30px; /* 125% */
+   margin: auto;
+}
