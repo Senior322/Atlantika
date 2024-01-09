@@ -6,24 +6,20 @@ import { ReactComponent as TimeFrame } from 'assets/timeFrame.svg';
 import { ReactComponent as ViberIcon } from 'assets/viber.svg';
 import { ReactComponent as WhatsappIcon } from 'assets/whatsapp.svg';
 import { ReactComponent as TelegramIcon } from 'assets/telegram.svg';
-// import Map from 'components/map/Map';
 
 export default function ContactsInfo() {
   return (
     <section className={css.ContactsInfoSection}>
       <div className={css.ContactsInfoContainer}>
         <div className={css.ContactsInfoMapContainer}>
-          <div>
-            {/* <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4533.645451968131!2d19.02420959283299!3d47.49533438449677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc265afe9bb9%3A0x983c3e82acfa1af4!2sFlex%20Gym%20Budapest!5e0!3m2!1suk!2sua!4v1704786581474!5m2!1suk!2sua"
-              width="600"
-              height="450"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe> */}
-          </div>
+          <iframe
+            title="GoogleMaps"
+            className={css.mainMap}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.712929875963!2d19.024479075879118!3d47.495505495643194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc25d48c57bb%3A0x8c5b0b5f97209ba4!2zQnVkYXBlc3QsIE3DoXJ2w6FueSB1LiAxOCwgMTAxMiDQo9Cz0L7RgNGJ0LjQvdCw!5e0!3m2!1suk!2sua!4v1704801172835!5m2!1suk!2sua"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div className={css.ContactsInfoInfoContainer}>
           <h2 className={css.ContactsInfoTitle}>Контакти</h2>

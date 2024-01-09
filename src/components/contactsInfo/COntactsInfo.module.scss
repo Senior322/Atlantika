@@ -2,14 +2,32 @@
    display: flex;
    flex-direction: column;
    background-color: var(--background-gray);
-   padding-bottom: 40px;
+   padding-block: 40px;
+   @media screen and (min-width: 1440px) {
+      padding-block: 60px;
+   }
 }
 .ContactsInfoContainer {
    margin-inline: 20px;
+   display: flex;
+   flex-direction: column;
+   @media screen and (min-width: 1440px) {
+      margin-inline: 0;
+      width: 982px;
+      margin: auto;
+      flex-direction: row;
+      gap: 85px;
+   }
 }
 .ContactsInfoMapContainer {
+   border: 7px solid var(--white-color);
 }
-.ContactsInfoInfoContainer {
+.mainMap {
+   width: 100%;
+   aspect-ratio: 2/1;
+   @media screen and (min-width: 1440px) {
+      width: 620px;
+   }
 }
 .ContactsInfoTitle {
    color: var(--dark-blue);
@@ -19,6 +37,9 @@
    font-weight: 700;
    line-height: 30px; /* 150% */
    margin-block: 20px;
+   @media screen and (min-width: 1440px){
+      margin-top: 48.5px;
+   }
 }
 .footerSocial {
    max-width: min-content;
@@ -26,9 +47,6 @@
    @media screen and (min-width: 1440px) {
       margin: 0;
    }
-}
-.footerUl {
-   color: var(--gray);
 }
 .footerUl {
    color: var(--gray);
