@@ -7,6 +7,7 @@ import Delivery from 'pages/delivery';
 import Discounts from 'pages/discounts';
 import Drop from 'pages/drop';
 import Home from 'pages/home';
+import Registration from 'pages/Registration';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="actions" element={<Actions />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="catalog" element={<Catalog />} />
+          <Route path="Registration" element={<Registration/>}/>
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>
