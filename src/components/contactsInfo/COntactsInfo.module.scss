@@ -1,0 +1,85 @@
+.ContactsInfoSection {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--background-gray);
+   padding-bottom: 40px;
+}
+.ContactsInfoContainer {
+   margin-inline: 20px;
+}
+.ContactsInfoMapContainer {
+}
+.ContactsInfoInfoContainer {
+}
+.ContactsInfoTitle {
+   color: var(--dark-blue);
+   font-family: Play;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 30px; /* 150% */
+   margin-block: 20px;
+}
+.footerSocial {
+   max-width: min-content;
+   text-wrap: nowrap;
+   @media screen and (min-width: 1440px) {
+      margin: 0;
+   }
+}
+.footerUl {
+   color: var(--gray);
+}
+.footerUl {
+   color: var(--gray);
+}
+.footerUlLiSpanName {
+   margin-right: 20px;
+   min-width: 51px;
+}
+.footerUlLiSpanNumber {
+   margin-right: 11px;
+}
+.footerUlLiFirst {
+   display: flex;
+   justify-content: space-between;
+}
+.footerUlLiFirst:not(:last-child) {
+   margin-bottom: 8px;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px; /* 150% */
+   @media screen and (min-width: 1440px) {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+   }
+}
+.footerInfoContainer {
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+   justify-content: flex-end;
+   gap: 11px;
+}
+.footerInfoP {
+   color: var(--gray);
+}
+.footerSocialTime {
+   color: var(--gray);
+   display: inline-block;
+   margin-right: 11px;
+}
+.hiddenIcons {
+   display: none;
+   @media screen and (min-width: 1440px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 4px;
+      padding-bottom: 12px;
+      padding-right: 27px;
+   }
+}
