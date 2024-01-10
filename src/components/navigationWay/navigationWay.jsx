@@ -10,6 +10,7 @@ export default function NavigationWay({ className = '' }) {
     { name: '/drop', way: 'Дропшипінг' },
     { name: '/delivery', way: 'Доставка і оплата' },
     { name: '/contacts', way: 'Контакти' },
+    { name: '/Registration', way: 'Реєстрація' },
   ];
   let currentPageName = ways.find(item => item.name === current)?.way || '';
   return (

@@ -1,0 +1,42 @@
+.registrationInfoSection {
+   display: flex;
+   // justify-content: center;
+   // align-items: center;
+}
+.registrationInfoContainer {
+   margin-inline: 12px;
+   @media screen and (min-width: 1440px) {
+   }
+   margin-inline: 120px;
+}
+.registrationInfoTitle {
+   margin-top: 32px;
+   color: var(--dark-blue);
+   font-family: Russo One;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 30px; /* 125% */
+   text-transform: uppercase;
+}
+.registrationFirstP {
+   margin-top: 20px;
+   color: var(--gray);
+   font-family: Play;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px; /* 150% */
+   text-transform: uppercase;
+}
+.registrationSecondP {
+   margin-top: 12px;
+   color: var(--gray);
+   font-family: Play;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px; /* 150% */
+   @media screen and (min-width: 1440px) {
+   }
+}
