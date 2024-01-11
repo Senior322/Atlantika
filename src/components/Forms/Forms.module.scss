@@ -9,7 +9,7 @@
    
 }
 .formFrom{
-   background-color: brown;
+   // background-color: brown;
    margin-inline: 20px;
    display: flex;
    flex-direction: column;
@@ -21,11 +21,11 @@
    }
 }
 .RegistrationFormFirstItem {
-   background-color: red;
+   // background-color: red;
 
 }
 .RegistrationFormSecondItem {
-   background-color: blue;
+   // background-color: blue;
 }
 .RegistrationContactInfo {
 }
@@ -64,6 +64,7 @@
    width: 100%;
    @media screen and (min-width: 1440px) {
       margin-top: 16px;
+      width: 480px;
    }
 }
 .formSpan {
@@ -155,4 +156,12 @@
    font-weight: 400;
    line-height: 24px; /* 150% */
    text-decoration-line: underline;
+}
+label{
+   @media screen and (min-width: 1440px) {
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 12px;
+   }
 }
