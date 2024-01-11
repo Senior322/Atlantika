@@ -1,29 +1,31 @@
 .RegistrationFormSection {
    padding-top: 40px;
    display: flex;
-   // justify-content: center;
-   // align-items: center;
    @media screen and (min-width: 1440px){
-      
+
    }
 }
 .RegistrationFormContainer {
+   
+}
+.formFrom{
+   background-color: brown;
    margin-inline: 20px;
    display: flex;
    flex-direction: column;
    @media screen and (min-width: 1440px){
       margin-inline: 120px;
       flex-direction: row;
+      width: 100%;
+      gap: 38px;
    }
 }
 .RegistrationFormFirstItem {
-   // display: flex;
-   // flex-direction: column;
-   // @media screen and (min-width: 1440px){
-   //    flex-direction: row;
-   // }
+   background-color: red;
+
 }
 .RegistrationFormSecondItem {
+   background-color: blue;
 }
 .RegistrationContactInfo {
 }
