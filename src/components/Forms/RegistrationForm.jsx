@@ -27,9 +27,6 @@ export default function RegistrationForm() {
     <section className={css.RegistrationFormSection}>
       <div className={css.RegistrationFormContainer}>
         <div className={css.RegistrationContactInfo}>
-          <h2 className={css.RegistrationFormTitle}>
-            Контактні дані представника
-          </h2>
           <Formik
             initialValues={{
               userName: '',
@@ -48,6 +45,9 @@ export default function RegistrationForm() {
             <Form className={css.formFrom}>
               <div className={css.RegistrationFormFirstItem}>
                 <div className={css.RegistrationFirstItemForm}>
+                  <h2 className={css.RegistrationFormTitle}>
+                    Контактні дані представника
+                  </h2>
                   <label htmlFor="userName">
                     <span className={css.formSpanInfo}>Ім’я</span>{' '}
                     <span className={css.formSpan}>*</span>
@@ -185,27 +185,26 @@ export default function RegistrationForm() {
                     ></Field>
                     <ErrorMessage name="userName" />
                   </label>
-                </div>
-              </div>
-              <div>
-                <div className={css.RegistrationFormConfirmContainer}>
-                  <p className={css.formText}>
-                    Я даю згоду на обробку персональних даних
-                  </p>
-                  <div className={css.confirmContainer}>
-                    <label className={css.confirmContainerLabel}>
-                      <Field type="checkbox" name="agreed" />
-                      <div className={css.checkMark}></div>
-                      <ErrorMessage name="agreed" />
-                    </label>
+                  <div className={css.RegistrationFormConfirmContainer}>
+                    <p className={css.formText}>
+                      Я даю згоду на обробку персональних даних
+                    </p>
+                    <div className={css.confirmContainer}>
+                      <label className={css.confirmContainerLabel}>
+                        <Field type="checkbox" name="agreed" />
+                        <div className={css.checkMark}></div>
+                        <ErrorMessage name="agreed" />
+                      </label>
+                    </div>
                   </div>
+                  <DefaultButton
+                    info={'Реєстрація'}
+                    type={'submit'}
+                    className={css.questionFormBtn}
+                  />
                 </div>
-                <DefaultButton
-                  info={'Реєстрація'}
-                  type={'submit'}
-                  className={css.questionFormBtn}
-                />
               </div>
+              <div></div>
             </Form>
           </Formik>
           <p className={css.downQuestion}>Вже зареєстровані?</p>
