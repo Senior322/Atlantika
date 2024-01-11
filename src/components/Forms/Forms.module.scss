@@ -5,14 +5,13 @@
    // align-items: center;
 }
 .RegistrationFormContainer {
-margin-inline: 20px;
+   margin-inline: 20px;
 }
 .RegistrationFormFirstItem {
 }
 .RegistrationFormSecondItem {
 }
-.RegistrationContactInfo{
-
+.RegistrationContactInfo {
 }
 .RegistrationFormTitle {
    color: var(--gray);
@@ -23,12 +22,27 @@ margin-inline: 20px;
    line-height: 24px; /* 150% */
    text-transform: uppercase;
 }
-// .RegistrationFormTitle:nth-child(){
-//    background-color: red;
-// }
-.RegistrationFormAccount{
-
+.RegistrationFormAccount {
+   margin-top: 20px;
 }
-.RegistrationFormActivity{
-
+.RegistrationFormActivity {
+   margin-top: 20px;
+}
+.RegistrationFirstItemForm{
+   margin-top: 16px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+.formInput {
+   padding: 10px 20px;
+   border: 1px solid var(--half-gray);
+   margin-top: 8px;
+   width: 100%;
+   @media screen and (min-width: 1440px) {
+      margin-top: 16px;
+   }
+}
+.formSpan {
+   color: var(--some-red);
 }
