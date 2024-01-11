@@ -35,6 +35,7 @@ export default function RegistrationForm() {
                 userName: '',
                 telephoneNumber: '',
                 email: '',
+                password: '',
                 agreed: false,
               }}
               validationSchema={BasicFormSchema}
@@ -57,7 +58,7 @@ export default function RegistrationForm() {
                     ></Field>
                     <ErrorMessage name="userName" />
                   </label>
-                  <label htmlFor="telephoneNumber">
+                  <label htmlFor="SurName">
                     <span className={css.formSpanInfo}>Призвіще</span>{' '}
                     <span className={css.formSpan}>*</span>
                     <Field
@@ -80,17 +81,122 @@ export default function RegistrationForm() {
                     <ErrorMessage name="telephoneNumber" />
                   </label>
                 </div>
-                <div>
-                  <p className={css.formText}>
-                    Я даю згоду на обробку персональних даних
-                  </p>
-                  <div className={css.confirmContainer}>
-                    <label className={css.confirmContainerLabel}>
-                      <Field type="checkbox" name="agreed" />
-                      <div className={css.checkMark}></div>
-                      <p className={css.confirm}>я даю згоду</p>
-                      <ErrorMessage name="agreed" />
+                <div className={css.RegistrationFormAccount}>
+                  <h2 className={css.RegistrationFormTitle}>Обліковий запис</h2>
+                  <label htmlFor="email">
+                    <span className={css.formSpanInfo}>E-mail</span>{' '}
+                    <span className={css.formSpan}>*</span>
+                    <Field
+                      className={css.formInput}
+                      type="email"
+                      name="email"
+                      placeholder="Для авторизації"
+                    ></Field>
+                    <ErrorMessage name="email" />
+                  </label>
+                  <label htmlFor="Password">
+                    <span className={css.formSpanInfo}>Пароль</span>{' '}
+                    <span className={css.formSpan}>*</span>
+                    <Field
+                      className={css.formInput}
+                      type="password"
+                      name="password"
+                      placeholder="От 4 до 20 символів"
+                    ></Field>
+                    <ErrorMessage name="password" />
+                  </label>
+                  <label htmlFor="ReturnPassword">
+                    <span className={css.formSpanInfo}>Повторіть пароль</span>{' '}
+                    <span className={css.formSpan}>*</span>
+                    <Field
+                      className={css.formInput}
+                      type="ReturnPassword"
+                      name="ReturnPassword"
+                      placeholder="Повторіть пароль для перевірки"
+                    ></Field>
+                    <ErrorMessage name="password" />
+                  </label>
+                </div>
+                <div className={css.RegistrationFormSecondItem}>
+                  <div className={css.RegistrationFormActivity}>
+                    <h2 className={css.RegistrationFormTitle}>Діяльність</h2>
+                    <label htmlFor="userName">
+                      <span className={css.formSpanInfo}>Місто</span>{' '}
+                      <span className={css.formSpan}>*</span>
+                      <Field
+                        className={css.formInput}
+                        type="text"
+                        name="userName"
+                        placeholder="Місто доставки"
+                      ></Field>
+                      <ErrorMessage name="userName" />
                     </label>
+                    <label htmlFor="userName">
+                      <span className={css.formSpanInfo}>Адреса</span>{' '}
+                      <span className={css.formSpan}>*</span>
+                      <Field
+                        className={css.formInput}
+                        type="text"
+                        name="userName"
+                        placeholder="Основна адреса доставки"
+                      ></Field>
+                      <ErrorMessage name="userName" />
+                    </label>
+                    <label htmlFor="userName">
+                      <span className={css.formSpanInfo}>Компанія</span>{' '}
+                      <span className={css.formSpan}>*</span>
+                      <Field
+                        className={css.formInput}
+                        type="text"
+                        name="userName"
+                        placeholder="Назва компанії або магазина"
+                      ></Field>
+                      <ErrorMessage name="userName" />
+                    </label>
+                    <label htmlFor="userName">
+                      <span className={css.formSpanInfo}>Організація</span>{' '}
+                      <Field
+                        className={css.formInput}
+                        type="text"
+                        name="userName"
+                        placeholder="Юридична назва компанії або магазину (ФОП)"
+                      ></Field>
+                      <ErrorMessage name="userName" />
+                    </label>
+                    <label htmlFor="userName">
+                      <span className={css.formSpanInfo}>Сфера</span>{' '}
+                      <Field
+                        className={css.formInput}
+                        type="text"
+                        name="userName"
+                        placeholder="Інше (вкажіть у примітці)"
+                      ></Field>
+                      <ErrorMessage name="userName" />
+                    </label>
+                    <label htmlFor="userName">
+                      <span className={css.formSpanInfo}>Примітки</span>{' '}
+                      <Field
+                        className={css.formInput}
+                        type="text"
+                        name="userName"
+                        placeholder="Інше"
+                      ></Field>
+                      <ErrorMessage name="userName" />
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <div className={css.RegistrationFormConfirmContainer}>
+                    <p className={css.formText}>
+                      Я даю згоду на обробку персональних даних
+                    </p>
+                    <div className={css.confirmContainer}>
+                      <label className={css.confirmContainerLabel}>
+                        <Field type="checkbox" name="agreed" />
+                        <div className={css.checkMark}></div>
+                        <ErrorMessage name="agreed" />
+                      </label>
+                    </div>
                   </div>
                   <DefaultButton
                     info={'Реєстрація'}
@@ -100,14 +206,7 @@ export default function RegistrationForm() {
                 </div>
               </Form>
             </Formik>
-          </div>
-          <div className={css.RegistrationFormAccount}>
-            <h2 className={css.RegistrationFormTitle}>Обліковий запис</h2>
-          </div>
-        </div>
-        <div className={css.RegistrationFormSecondItem}>
-          <div className={css.RegistrationFormActivity}>
-            <h2 className={css.RegistrationFormTitle}>Діяльність</h2>
+            <p className={css.downQuestion}>Вже зареєстровані?</p>
           </div>
         </div>
       </div>
