@@ -11,6 +11,8 @@ export default function NavigationWay({ className = '' }) {
     { name: '/delivery', way: 'Доставка і оплата' },
     { name: '/contacts', way: 'Контакти' },
     { name: '/Registration', way: 'Реєстрація' },
+    { name: '/Personal', way: 'Особистий кабінет' },
+    { name: '/Passwordchange', way: 'Зміна паролю' },
   ];
   let currentPageName = ways.find(item => item.name === current)?.way || '';
   return (
