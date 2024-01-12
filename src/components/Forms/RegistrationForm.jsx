@@ -49,8 +49,9 @@ export default function RegistrationForm() {
                     Контактні дані представника
                   </h2>
                   <label htmlFor="userName">
+                     <div>
                     <span className={css.formSpanInfo}>Ім’я</span>{' '}
-                    <span className={css.formSpan}>*</span>
+                    <span className={css.formSpan}>*</span></div>
                     <Field
                       className={css.formInput}
                       type="text"

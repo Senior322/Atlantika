@@ -1,19 +1,18 @@
 .RegistrationFormSection {
    padding-top: 40px;
    display: flex;
-   @media screen and (min-width: 1440px){
-
+   @media screen and (min-width: 1440px) {
+      
    }
 }
 .RegistrationFormContainer {
-   
 }
-.formFrom{
+.formFrom {
    // background-color: brown;
    margin-inline: 20px;
    display: flex;
    flex-direction: column;
-   @media screen and (min-width: 1440px){
+   @media screen and (min-width: 1440px) {
       margin-inline: 120px;
       flex-direction: row;
       width: 100%;
@@ -22,7 +21,6 @@
 }
 .RegistrationFormFirstItem {
    // background-color: red;
-
 }
 .RegistrationFormSecondItem {
    // background-color: blue;
@@ -157,11 +155,22 @@
    line-height: 24px; /* 150% */
    text-decoration-line: underline;
 }
-label{
+label {
    @media screen and (min-width: 1440px) {
-      display:flex;
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
-      gap: 12px;
    }
+}
+.passwordTitle{
+   color: var(--dark-blue);
+   font-family: Russo One;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 30px; /* 125% */
+   text-transform: uppercase;
+@media screen and (min-width: 1440px) {
+   
+}
 }
