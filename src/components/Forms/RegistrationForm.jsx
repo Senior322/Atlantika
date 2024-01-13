@@ -205,7 +205,6 @@ export default function RegistrationForm() {
                   />
                 </div>
               </div>
-              <div></div>
             </Form>
           </Formik>
           <p className={css.downQuestion}>Вже зареєстровані?</p>

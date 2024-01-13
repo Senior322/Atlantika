@@ -1,6 +1,7 @@
 .RegistrationFormSection {
    padding-top: 40px;
    display: flex;
+   background-color: var(--background-gray);
    @media screen and (min-width: 1440px) {
       
    }
@@ -173,4 +174,15 @@ label {
 @media screen and (min-width: 1440px) {
    
 }
+}
+.personalOficeDownButtonContainer{
+   margin-top: 20px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   justify-content: space-between;
+}
+.questionFormBtnPersonalOffice{
+width: 174px;
+height: 44px;
 }
