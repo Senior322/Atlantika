@@ -10,7 +10,6 @@ export default function PasswordChangeForm() {
       .min(2, 'Повинен бути довшим за 2 символи')
       .max(20, 'Гарна спроба, ніхто не має такого довгого імені')
       .required('Обов*язково'),
-    // agreed: Yup.boolean().oneOf([true], 'Надайте згоду'),
   });
   return (
     <section>
@@ -31,37 +30,47 @@ export default function PasswordChangeForm() {
             action.resetForm();
           }}
         >
-          <Form className={css.formFrom}>
-            <div className={css.RegistrationFormAccount}>
-              <label htmlFor="Password">
-                <span className={css.formSpanInfo}>Новий пароль</span>{' '}
-                <span className={css.formSpan}>*</span>
-                <Field
-                  className={css.formInput}
-                  type="password"
-                  name="password"
-                  placeholder="От 4 до 20 символів"
-                ></Field>
-                <ErrorMessage name="password" />
-              </label>
-              <label htmlFor="Password">
-                <span className={css.formSpanInfo}>Повторіть пароль </span>{' '}
-                <span className={css.formSpan}>*</span>
-                <Field
-                  className={css.formInput}
-                  type="password"
-                  name="password"
-                  placeholder="От 4 до 20 символів"
-                ></Field>
-                <ErrorMessage name="password" />
-              </label>
-            </div>
-            <DefaultButton
-              info={'зберегти зміни'}
-              type={'submit'}
-              className={css.questionFormBtn}
-            />
-          </Form>
+          {({ errors, touched }) => (
+            <Form className={css.formFrom}>
+              <div className={css.RegistrationFormAccount}>
+                <label htmlFor="Password">
+                  <span className={css.formSpanInfo}>Новий пароль</span>{' '}
+                  <span className={css.formSpan}>*</span>
+                  <Field
+                    className={
+                      errors.SurName
+                        ? css.formInput + ' ' + css.error
+                        : css.formInput
+                    }
+                    type="password"
+                    name="password"
+                    placeholder="От 4 до 20 символів"
+                  ></Field>
+                  <ErrorMessage name="password" />
+                </label>
+                <label htmlFor="Password">
+                  <span className={css.formSpanInfo}>Повторіть пароль </span>{' '}
+                  <span className={css.formSpan}>*</span>
+                  <Field
+                    className={
+                      errors.SurName
+                        ? css.formInput + ' ' + css.error
+                        : css.formInput
+                    }
+                    type="password"
+                    name="password"
+                    placeholder="От 4 до 20 символів"
+                  ></Field>
+                  <ErrorMessage name="password" />
+                </label>
+              </div>
+              <DefaultButton
+                info={'зберегти зміни'}
+                type={'submit'}
+                className={css.questionFormBtn}
+              />
+            </Form>
+          )}
         </Formik>
       </div>
     </section>

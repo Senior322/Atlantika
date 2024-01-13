@@ -29,6 +29,7 @@ export default function PersonalOffice() {
         <Formik
           initialValues={{
             userName: '',
+            SurName: '',
             telephoneNumber: '',
             email: '',
             password: '',
@@ -41,100 +42,143 @@ export default function PersonalOffice() {
             action.resetForm();
           }}
         >
-          <Form className={css.formFrom}>
-            <h2 className={css.RegistrationFormTitle}>
-              Контактні дані представника
-            </h2>
-            <label htmlFor="userName">
+          {({ errors, touched }) => (
+            <Form className={css.formFrom}>
+              <h2 className={css.RegistrationFormTitle}>
+                Контактні дані представника
+              </h2>
+              <label htmlFor="userName">
+                <div>
+                  <span className={css.formSpanInfo}>Ім’я</span>{' '}
+                  <span className={css.formSpan}>*</span>
+                </div>
+                <Field
+                  className={
+                    errors.SurName
+                      ? css.formInput + ' ' + css.error
+                      : css.formInput
+                  }
+                  type="text"
+                  name="userName"
+                  placeholder="Ім'я отримувача"
+                ></Field>
+                <ErrorMessage name="userName" />
+              </label>
+              <label htmlFor="SurName">
+                <div>
+                  <span className={css.formSpanInfo}>Призвіще</span>{' '}
+                  <span className={css.formSpan}>*</span>
+                </div>
+                <Field
+                  className={
+                    errors.SurName
+                      ? css.formInput + ' ' + css.error
+                      : css.formInput
+                  }
+                  type="text"
+                  name="SurName"
+                  placeholder="Прізвище отримувача"
+                ></Field>
+                <ErrorMessage name="SurName" />
+              </label>
+              <label htmlFor="email">
+                <div>
+                  <span className={css.formSpanInfo}>E-mail</span>{' '}
+                  <span className={css.formSpan}>*</span>
+                </div>
+                <Field
+                  className={
+                    errors.SurName
+                      ? css.formInput + ' ' + css.error
+                      : css.formInput
+                  }
+                  type="email"
+                  name="email"
+                  placeholder="Для авторизації"
+                ></Field>
+                <ErrorMessage name="email" />
+              </label>
+              <label htmlFor="telephoneNumber">
+                <div>
+                  <span className={css.formSpanInfo}>Tелефон</span>{' '}
+                  <span className={css.formSpan}>*</span>
+                </div>
+                <Field
+                  className={
+                    errors.SurName
+                      ? css.formInput + ' ' + css.error
+                      : css.formInput
+                  }
+                  type="phone"
+                  name="telephoneNumber"
+                  placeholder="+38 (___) ___ __ __"
+                ></Field>
+                <ErrorMessage name="telephoneNumber" />
+              </label>
               <div>
-                <span className={css.formSpanInfo}>Ім’я</span>{' '}
-                <span className={css.formSpan}>*</span>
+                <h2 className={css.RegistrationFormTitle}>зміна паролю</h2>
+                <label htmlFor="Password">
+                  <div>
+                    <span className={css.formSpanInfo}>старий пароль</span>{' '}
+                    <span className={css.formSpan}>*</span>
+                  </div>
+                  <Field
+                    className={
+                      errors.SurName
+                        ? css.formInput + ' ' + css.error
+                        : css.formInput
+                    }
+                    type="password"
+                    name="password"
+                    placeholder="От 4 до 20 символів"
+                  ></Field>
+                  <ErrorMessage name="password" />
+                </label>
+                <label htmlFor="Password">
+                  <div>
+                    <span className={css.formSpanInfo}>новий пароль</span>{' '}
+                    <span className={css.formSpan}>*</span>
+                  </div>
+                  <Field
+                    className={
+                      errors.SurName
+                        ? css.formInput + ' ' + css.error
+                        : css.formInput
+                    }
+                    type="password"
+                    name="password"
+                    placeholder="От 4 до 20 символів"
+                  ></Field>
+                  <ErrorMessage name="password" />
+                </label>
+                <label htmlFor="Password">
+                  <div>
+                    <span className={css.formSpanInfo}>повторіть пароль</span>{' '}
+                    <span className={css.formSpan}>*</span>
+                  </div>
+                  <Field
+                    className={
+                      errors.SurName
+                        ? css.formInput + ' ' + css.error
+                        : css.formInput
+                    }
+                    type="password"
+                    name="password"
+                    placeholder="От 4 до 20 символів"
+                  ></Field>
+                  <ErrorMessage name="password" />
+                </label>
               </div>
-              <Field
-                className={css.formInput}
-                type="text"
-                name="userName"
-                placeholder="Ім'я отримувача"
-              ></Field>
-              <ErrorMessage name="userName" />
-            </label>
-            <label htmlFor="SurName">
-              <span className={css.formSpanInfo}>Призвіще</span>{' '}
-              <span className={css.formSpan}>*</span>
-              <Field
-                className={css.formInput}
-                type="text"
-                name="SurName"
-                placeholder="Прізвище отримувача"
-              ></Field>
-              <ErrorMessage name="SurName" />
-            </label>
-            <label htmlFor="email">
-              <span className={css.formSpanInfo}>E-mail</span>{' '}
-              <span className={css.formSpan}>*</span>
-              <Field
-                className={css.formInput}
-                type="email"
-                name="email"
-                placeholder="Для авторизації"
-              ></Field>
-              <ErrorMessage name="email" />
-            </label>
-            <label htmlFor="telephoneNumber">
-              <span className={css.formSpanInfo}>Tелефон</span>{' '}
-              <span className={css.formSpan}>*</span>
-              <Field
-                className={css.formInput}
-                type="phone"
-                name="telephoneNumber"
-                placeholder="+38 (___) ___ __ __"
-              ></Field>
-              <ErrorMessage name="telephoneNumber" />
-            </label>
-            <div>
-              <h2 className={css.RegistrationFormTitle}>зміна паролю</h2>
-              <label htmlFor="Password">
-                <span className={css.formSpanInfo}>старий пароль</span>{' '}
-                <span className={css.formSpan}>*</span>
-                <Field
-                  className={css.formInput}
-                  type="password"
-                  name="password"
-                  placeholder="От 4 до 20 символів"
-                ></Field>
-                <ErrorMessage name="password" />
-              </label>
-              <label htmlFor="Password">
-                <span className={css.formSpanInfo}>новий пароль</span>{' '}
-                <span className={css.formSpan}>*</span>
-                <Field
-                  className={css.formInput}
-                  type="password"
-                  name="password"
-                  placeholder="От 4 до 20 символів"
-                ></Field>
-                <ErrorMessage name="password" />
-              </label>
-              <label htmlFor="Password">
-                <span className={css.formSpanInfo}>повторіть пароль</span>{' '}
-                <span className={css.formSpan}>*</span>
-                <Field
-                  className={css.formInput}
-                  type="password"
-                  name="password"
-                  placeholder="От 4 до 20 символів"
-                ></Field>
-                <ErrorMessage name="password" />
-              </label>
-            </div>
-            <div className={css.personalOficeDownButtonContainer}>
-            <Link to="/Passwordchange">Забули пароль?</Link>
-            <DefaultButton
-              info={'зберегти зміни'}
-              type={'submit'}
-              className={css.questionFormBtnPersonalOffice}
-            /></div>
-          </Form>
+              <div className={css.personalOficeDownButtonContainer}>
+                <Link to="/Passwordchange">Забули пароль?</Link>
+                <DefaultButton
+                  info={'зберегти зміни'}
+                  type={'submit'}
+                  className={css.questionFormBtnPersonalOffice}
+                />
+              </div>
+            </Form>
+          )}
         </Formik>
       </div>
     </section>

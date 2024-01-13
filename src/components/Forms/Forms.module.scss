@@ -3,28 +3,23 @@
    display: flex;
    background-color: var(--background-gray);
    @media screen and (min-width: 1440px) {
-      
    }
 }
 .RegistrationFormContainer {
 }
 .formFrom {
-   // background-color: brown;
    margin-inline: 20px;
    display: flex;
    flex-direction: column;
    @media screen and (min-width: 1440px) {
       margin-inline: 120px;
       flex-direction: row;
-      width: 100%;
       gap: 38px;
    }
 }
 .RegistrationFormFirstItem {
-   // background-color: red;
 }
 .RegistrationFormSecondItem {
-   // background-color: blue;
 }
 .RegistrationContactInfo {
 }
@@ -61,10 +56,16 @@
    border: 1px solid var(--half-gray);
    margin-top: 8px;
    width: 100%;
+   &[type="textarea"] {
+      height: 100px;
+   }
    @media screen and (min-width: 1440px) {
       margin-top: 16px;
       width: 480px;
    }
+}
+.error {
+   border: 1px solid var(--dark-orange);
 }
 .formSpan {
    color: var(--some-red);
@@ -84,29 +85,38 @@
    }
 }
 .formText {
-   margin-top: 20px;
+   // margin-top: 20px;
    color: var(--gray);
    font-family: Play;
    font-size: 13px;
    font-style: normal;
    font-weight: 400;
    line-height: 18px; /* 138.462% */
+   @media screen and (min-width: 1440px) {
+      max-width: 163px;
+   }
 }
 .RegistrationFormConfirmContainer {
-   display: flex;
-   flex-direction: row-reverse;
-   gap: 12px;
+   margin-top: 4px;
+   @media screen and (min-width: 1440px) {
+      margin-top: -5px;
+      display: flex;
+      flex-direction: row;
+      gap: 36px;
+   }
+}
+.RegistrationFormConfirmAgreedInfoContainer{
+   
 }
 .confirmContainer {
-   margin-top: 17px;
    display: flex;
    flex-direction: row;
+   gap: 12px;
    @media screen and (min-width: 1440px) {
-      margin-top: 20px;
+      
    }
 }
 .confirmContainer {
-   margin-top: 17px;
    display: flex;
    flex-direction: row;
    @media screen and (min-width: 1440px) {
@@ -114,8 +124,7 @@
    }
 }
 .confirmContainerLabel {
-   display: flex;
-   gap: 12px;
+   
 }
 .confirmContainerLabel input {
    width: 0;
@@ -161,9 +170,10 @@ label {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      gap: 12px;
    }
 }
-.passwordTitle{
+.passwordTitle {
    color: var(--dark-blue);
    font-family: Russo One;
    font-size: 24px;
@@ -171,18 +181,17 @@ label {
    font-weight: 400;
    line-height: 30px; /* 125% */
    text-transform: uppercase;
-@media screen and (min-width: 1440px) {
-   
+   @media screen and (min-width: 1440px) {
+   }
 }
-}
-.personalOficeDownButtonContainer{
+.personalOficeDownButtonContainer {
    margin-top: 20px;
    display: flex;
    flex-direction: row;
    gap: 20px;
    justify-content: space-between;
 }
-.questionFormBtnPersonalOffice{
-width: 174px;
-height: 44px;
+.questionFormBtnPersonalOffice {
+   width: 174px;
+   height: 44px;
 }
