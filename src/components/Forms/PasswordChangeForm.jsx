@@ -6,10 +6,10 @@ import DefaultButton from 'components/defaultButton/defaultButton';
 
 export default function PasswordChangeForm() {
   const BasicFormSchema = Yup.object().shape({
-    userName: Yup.string()
-      .min(2, 'Повинен бути довшим за 2 символи')
-      .max(20, 'Гарна спроба, ніхто не має такого довгого імені')
-      .required('Обов*язково'),
+   //  userName: Yup.string()
+   //    .min(2, 'Повинен бути довшим за 2 символи')
+   //    .max(20, 'Гарна спроба, ніхто не має такого довгого імені')
+   //    .required('Обов*язково'),
   });
   return (
     <section>
@@ -21,6 +21,7 @@ export default function PasswordChangeForm() {
             telephoneNumber: '',
             email: '',
             password: '',
+            returnPassword: '',
             agreed: false,
           }}
           validationSchema={BasicFormSchema}
@@ -48,7 +49,7 @@ export default function PasswordChangeForm() {
                   ></Field>
                   <ErrorMessage name="password" />
                 </label>
-                <label htmlFor="Password">
+                <label htmlFor="returnPassword">
                   <span className={css.formSpanInfo}>Повторіть пароль </span>{' '}
                   <span className={css.formSpan}>*</span>
                   <Field
@@ -58,10 +59,10 @@ export default function PasswordChangeForm() {
                         : css.formInput
                     }
                     type="password"
-                    name="password"
+                    name="returnPassword"
                     placeholder="От 4 до 20 символів"
                   ></Field>
-                  <ErrorMessage name="password" />
+                  <ErrorMessage name="returnPassword" />
                 </label>
               </div>
               <DefaultButton

@@ -33,6 +33,7 @@ export default function PersonalOffice() {
             telephoneNumber: '',
             email: '',
             password: '',
+            newPassword: '',
             agreed: false,
           }}
           validationSchema={BasicFormSchema}
@@ -134,7 +135,7 @@ export default function PersonalOffice() {
                   ></Field>
                   <ErrorMessage name="password" />
                 </label>
-                <label htmlFor="Password">
+                <label htmlFor="newPassword">
                   <div>
                     <span className={css.formSpanInfo}>новий пароль</span>{' '}
                     <span className={css.formSpan}>*</span>
@@ -146,14 +147,14 @@ export default function PersonalOffice() {
                         : css.formInput
                     }
                     type="password"
-                    name="password"
+                    name="newPassword"
                     placeholder="От 4 до 20 символів"
                   ></Field>
-                  <ErrorMessage name="password" />
+                  <ErrorMessage name="newPassword" />
                 </label>
-                <label htmlFor="Password">
+                <label htmlFor="RepeatPassword">
                   <div>
-                    <span className={css.formSpanInfo}>повторіть пароль</span>{' '}
+                    <span className={css.formSpanInfo}>Повторіть пароль</span>{' '}
                     <span className={css.formSpan}>*</span>
                   </div>
                   <Field
@@ -162,9 +163,9 @@ export default function PersonalOffice() {
                         ? css.formInput + ' ' + css.error
                         : css.formInput
                     }
-                    type="password"
-                    name="password"
-                    placeholder="От 4 до 20 символів"
+                    type="Password"
+                    name="RepeatPassword"
+                    placeholder="Повторіть пароль для перевірки"
                   ></Field>
                   <ErrorMessage name="password" />
                 </label>
