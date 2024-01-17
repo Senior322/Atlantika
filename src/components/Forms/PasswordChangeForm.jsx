@@ -21,7 +21,7 @@ export default function PasswordChangeForm() {
             telephoneNumber: '',
             email: '',
             password: '',
-            returnPassword: '',
+            repeatPassword: '',
             agreed: false,
           }}
           validationSchema={BasicFormSchema}
@@ -49,7 +49,7 @@ export default function PasswordChangeForm() {
                   ></Field>
                   <ErrorMessage name="password" />
                 </label>
-                <label htmlFor="returnPassword">
+                <label htmlFor="repeatPassword">
                   <span className={css.formSpanInfo}>Повторіть пароль </span>{' '}
                   <span className={css.formSpan}>*</span>
                   <Field
@@ -59,10 +59,10 @@ export default function PasswordChangeForm() {
                         : css.formInput
                     }
                     type="password"
-                    name="returnPassword"
+                    name="repeatPassword"
                     placeholder="От 4 до 20 символів"
                   ></Field>
-                  <ErrorMessage name="returnPassword" />
+                  <ErrorMessage name="repeatPassword" />
                 </label>
               </div>
               <DefaultButton

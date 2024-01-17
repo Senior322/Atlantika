@@ -12,11 +12,11 @@ export default function RegistrationForm() {
     userName: Yup.string()
       .min(2, 'Повинен бути довшим за 2 символи')
       .max(20, 'Гарна спроба, ніхто не має такого довгого імені')
-      .required('Обов*язково'),
+      .required("Введіть ім'я"),
     SurName: Yup.string()
       .min(2, 'Повинен бути довшим за 2 символи')
       .max(20, 'Гарна спроба, ніхто не має такого довгого призвіща')
-      .required('Обов*язково'),
+      .required('Введіть прізвище'),
     telephoneNumber: Yup.string()
       .matches(phoneRegExp, 'Номер телефону недійсний')
       .required('Обов*язково'),
@@ -72,7 +72,7 @@ export default function RegistrationForm() {
                       Контактні дані представника
                     </h2>
                     <label htmlFor="userName">
-                      <div>
+                      <div className={css.labelNameItem}>
                         <span className={css.formSpanInfo}>Ім’я</span>{' '}
                         <span className={css.formSpan}>*</span>
                       </div>
@@ -86,7 +86,8 @@ export default function RegistrationForm() {
                         name="userName"
                         placeholder="Ім'я отримувача"
                       ></Field>
-                      <ErrorMessage name="userName" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="userName"/></div>
                     </label>
                     <label htmlFor="SurName">
                       <div>
@@ -103,7 +104,8 @@ export default function RegistrationForm() {
                         name="SurName"
                         placeholder="Прізвище отримувача"
                       ></Field>
-                      <ErrorMessage name="SurName" />
+                       <div className={css.errorsDiv}>
+                      <ErrorMessage name="SurName" /></div>
                     </label>
                     <label htmlFor="telephoneNumber">
                       <div>
@@ -120,7 +122,8 @@ export default function RegistrationForm() {
                         name="telephoneNumber"
                         placeholder="+38 (___) ___ __ __"
                       ></Field>
-                      <ErrorMessage name="telephoneNumber" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="telephoneNumber" /></div>
                     </label>
                   </div>
                   <div className={css.RegistrationFormAccount}>
@@ -142,7 +145,8 @@ export default function RegistrationForm() {
                         name="email"
                         placeholder="Для авторизації"
                       ></Field>
-                      <ErrorMessage name="email" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="email" /></div>
                     </label>
                     <label htmlFor="Password">
                       <div>
@@ -159,7 +163,8 @@ export default function RegistrationForm() {
                         name="password"
                         placeholder="От 4 до 20 символів"
                       ></Field>
-                      <ErrorMessage name="password" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="password" /></div>
                     </label>
                     <label htmlFor="RepeatPassword">
                       <div>
@@ -178,7 +183,8 @@ export default function RegistrationForm() {
                         name="RepeatPassword"
                         placeholder="Повторіть пароль для перевірки"
                       ></Field>
-                      <ErrorMessage name="password" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="password" /></div>
                     </label>
                   </div>
                 </div>
@@ -200,7 +206,8 @@ export default function RegistrationForm() {
                         name="city"
                         placeholder="Місто доставки"
                       ></Field>
-                      <ErrorMessage name="city" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="city" /></div>
                     </label>
                     <label htmlFor="address">
                       <span className={css.formSpanInfo}>Адреса</span>{' '}
@@ -214,7 +221,8 @@ export default function RegistrationForm() {
                         name="address"
                         placeholder="Основна адреса доставки"
                       ></Field>
-                      <ErrorMessage name="address" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="address" /></div>
                     </label>
                     <label htmlFor="company">
                       <div>
@@ -231,7 +239,8 @@ export default function RegistrationForm() {
                         name="company"
                         placeholder="Назва компанії або магазина"
                       ></Field>
-                      <ErrorMessage name="company" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="company" /></div>
                     </label>
                     <label htmlFor="organization">
                       <span className={css.formSpanInfo}>Організація</span>{' '}
@@ -242,7 +251,8 @@ export default function RegistrationForm() {
                         name="organization"
                         placeholder="Юридична назва компанії або магазину (ФОП)"
                       ></Field>
-                      <ErrorMessage name="organization" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="organization" /></div>
                     </label>
                     <label htmlFor="area">
                       <span className={css.formSpanInfo}>Сфера</span>{' '}
@@ -256,7 +266,8 @@ export default function RegistrationForm() {
                         name="area"
                         placeholder="Інше (вкажіть у примітці)"
                       ></Field>
-                      <ErrorMessage name="area" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="area" /></div>
                     </label>
                     <label htmlFor="notes">
                       <span className={css.formSpanInfo}>Примітки</span>{' '}
@@ -270,7 +281,8 @@ export default function RegistrationForm() {
                         name="notes"
                         placeholder="Інше"
                       ></Field>
-                      <ErrorMessage name="notes" />
+                      <div className={css.errorsDiv}>
+                      <ErrorMessage name="notes" /></div>
                     </label>
                     <div className={css.RegistrationFormConfirmContainer}>
                       <div
@@ -279,7 +291,8 @@ export default function RegistrationForm() {
                           <label className={css.confirmContainerLabel}>
                             <Field type="checkbox" name="agreed" />
                             <div className={css.checkMark}></div>
-                            <ErrorMessage name="agreed" />
+                            <div className={css.errorsDiv}>
+                            <ErrorMessage name="agreed" /></div>
                           </label>
                           <p className={css.formText}>
                             Я даю згоду на обробку персональних даних
